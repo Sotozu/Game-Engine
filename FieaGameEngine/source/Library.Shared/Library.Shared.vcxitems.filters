@@ -1,0 +1,229 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="$(MSBuildThisFileDirectory)pch.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)IJsonCoordinator.cpp">
+      <Filter>Deserialization</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)IJsonParseHelper.cpp">
+      <Filter>Deserialization</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)JsonScopeHelper.cpp">
+      <Filter>Deserialization</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Datum.cpp">
+      <Filter>Kernal</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Scope.cpp">
+      <Filter>Kernal</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)GameClock.cpp">
+      <Filter>GameEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)GameObject.cpp">
+      <Filter>GameEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)GameState.cpp">
+      <Filter>GameEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)GameTime.cpp">
+      <Filter>GameEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Action.cpp">
+      <Filter>GameEngine\Actions</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)ActionCreateAction.cpp">
+      <Filter>GameEngine\Actions</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)ActionDestroyAction.cpp">
+      <Filter>GameEngine\Actions</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)ActionIfAction.cpp">
+      <Filter>GameEngine\Actions</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)ActionIntegerIncrement.cpp">
+      <Filter>GameEngine\Actions</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)ActionList.cpp">
+      <Filter>GameEngine\Actions</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)EventPublisher.cpp">
+      <Filter>GameEngine\Event</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Attributed.cpp">
+      <Filter>GameEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)EventQueue.cpp">
+      <Filter>GameEngine\Event</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="$(MSBuildThisFileDirectory)pch.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)UnorderedMap.h">
+      <Filter>Containers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)Vector.h">
+      <Filter>Containers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)SList.h">
+      <Filter>Containers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)Stack.h">
+      <Filter>Containers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)IJsonCoordinator.h">
+      <Filter>Deserialization</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)IJsonParseHelper.h">
+      <Filter>Deserialization</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)JsonScopeHelper.h">
+      <Filter>Deserialization</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)Datum.h">
+      <Filter>Kernal</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)Scope.h">
+      <Filter>Kernal</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)RTTI.h">
+      <Filter>Kernal</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)TypeRegistry.h">
+      <Filter>GameEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)DefaultHash.h">
+      <Filter>GameEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)GameClock.h">
+      <Filter>GameEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)GameObject.h">
+      <Filter>GameEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)GameState.h">
+      <Filter>GameEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)GameTime.h">
+      <Filter>GameEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)Action.h">
+      <Filter>GameEngine\Actions</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)ActionCreateAction.h">
+      <Filter>GameEngine\Actions</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)ActionDestroyAction.h">
+      <Filter>GameEngine\Actions</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)ActionIfAction.h">
+      <Filter>GameEngine\Actions</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)ActionIntegerIncrement.h">
+      <Filter>GameEngine\Actions</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)ActionList.h">
+      <Filter>GameEngine\Actions</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)Event.h">
+      <Filter>GameEngine\Event</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)EventPublisher.h">
+      <Filter>GameEngine\Event</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)Attributed.h">
+      <Filter>GameEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)Factory.h">
+      <Filter>GameEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)IEventSubscriber.h">
+      <Filter>GameEngine\Event</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)EventQueue.h">
+      <Filter>GameEngine\Event</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="$(MSBuildThisFileDirectory)UnorderedMap.inl">
+      <Filter>Containers</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Vector.inl">
+      <Filter>Containers</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Stack.inl">
+      <Filter>Containers</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)SList.inl">
+      <Filter>Containers</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)IJsonCoordinator.inl">
+      <Filter>Deserialization</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Datum.inl">
+      <Filter>Kernal</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Scope.inl">
+      <Filter>Kernal</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)TypeRegistry.inl">
+      <Filter>GameEngine</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)DefaultHash.inl">
+      <Filter>GameEngine</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Action.inl">
+      <Filter>GameEngine\Actions</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)ActionCreateAction.inl">
+      <Filter>GameEngine\Actions</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)ActionDestroyAction.inl">
+      <Filter>GameEngine\Actions</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)ActionIfAction.inl">
+      <Filter>GameEngine\Actions</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)ActionIntegerIncrement.inl">
+      <Filter>GameEngine\Actions</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)ActionList.inl">
+      <Filter>GameEngine\Actions</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Attributed.inl">
+      <Filter>GameEngine</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Factory.inl">
+      <Filter>GameEngine</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Event.inl">
+      <Filter>GameEngine\Event</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)EventQueue.inl">
+      <Filter>GameEngine\Event</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)GameState.inl">
+      <Filter>GameEngine</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Deserialization">
+      <UniqueIdentifier>{b1fde6f2-5274-41e4-b9f7-2690be97a8f8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Containers">
+      <UniqueIdentifier>{a93ef62a-1000-4f9a-9a1d-d2a82e395fd5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Kernal">
+      <UniqueIdentifier>{6bad801a-a835-4614-b55e-fb491e18f914}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameEngine">
+      <UniqueIdentifier>{05975cde-1a1f-44e8-ac60-695e879bbf3e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameEngine\Actions">
+      <UniqueIdentifier>{3b2f3168-b08f-46e8-8681-a7908896f023}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameEngine\Event">
+      <UniqueIdentifier>{0ee04093-5a87-4274-8108-1ad4fbdf8552}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

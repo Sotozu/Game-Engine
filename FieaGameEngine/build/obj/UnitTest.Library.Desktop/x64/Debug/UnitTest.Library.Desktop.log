@@ -1,0 +1,30 @@
+﻿  pch.cpp
+  ActionTest.cpp
+  AttributedFoo.cpp
+  AttributedTest.cpp
+  DatumTest.cpp
+  DefaultHashTest.cpp
+  DerivedAttributedFoo.cpp
+  EventClearQueSubscriber.cpp
+  GameStateSubscriber.cpp
+  EventQueueSubscriber.cpp
+  EventTest.cpp
+  FactoryTest.cpp
+  Foo.cpp
+  FooSubscriber.cpp
+  FooTest.cpp
+  AvatarFoo.cpp
+  GameObjectTest.cpp
+  JsonIntegerHelper.cpp
+  JsonParsingTest.cpp
+  ScopeTest.cpp
+  SListTest.cpp
+  Generating Code...
+  Compiling...
+  SubscriberAddSubscriber.cpp
+  SuperDerivedAttributedFoo.cpp
+  UnorderdMapTest.cpp
+  VectorTest.cpp
+  Generating Code...
+     Creating library C:\Dev\depot\Students\CH18\Alexander.Soto\Prog2\FieaGameEngine\build\bin\UnitTest.Library.Desktop\x64\Debug\UnitTest.Library.Desktop.lib and object C:\Dev\depot\Students\CH18\Alexander.Soto\Prog2\FieaGameEngine\build\bin\UnitTest.Library.Desktop\x64\Debug\UnitTest.Library.Desktop.exp
+  UnitTest.Library.Desktop.vcxproj -> C:\Dev\depot\Students\CH18\Alexander.Soto\Prog2\FieaGameEngine\build\bin\UnitTest.Library.Desktop\x64\Debug\UnitTest.Library.Desktop.dll

@@ -1,0 +1,21 @@
+﻿  pch.cpp
+  Action.cpp
+  ActionCreateAction.cpp
+  ActionDestroyAction.cpp
+  ActionIfAction.cpp
+  ActionIntegerIncrement.cpp
+  ActionList.cpp
+  Attributed.cpp
+  Datum.cpp
+  EventPublisher.cpp
+  EventQueue.cpp
+  GameClock.cpp
+  GameObject.cpp
+  GameState.cpp
+  GameTime.cpp
+  IJsonCoordinator.cpp
+  IJsonParseHelper.cpp
+  JsonScopeHelper.cpp
+  Scope.cpp
+  Generating Code...
+  Library.Desktop.vcxproj -> C:\Dev\depot\Students\CH18\Alexander.Soto\Prog2\FieaGameEngine\build\bin\Library.Desktop\Win32\Debug\Library.Desktop.lib

@@ -1,0 +1,73 @@
+{
+  "_name": {
+    "type": "string",
+    "value": "Test GameObject"
+  },
+  "_position": {
+    "type": "vector",
+    "value": "vec4(1.000000, 2.000000, 3.000000, 4.000000)"
+
+  },
+  "_rotation": {
+    "type": "vector",
+    "value": "vec4(1.000000, 2.000000, 3.000000, 4.000000)"
+
+  },
+  "_scale": {
+    "type": "vector",
+    "value": "vec4(1.000000, 2.000000, 3.000000, 4.000000)"
+
+  },
+  "_children": {
+    "type": "scope",
+    "value": [
+      {
+        "class": "AvatarFoo",
+
+        "_name": {
+          "type": "string",
+          "value": "MyAvatarFoo"
+        },
+        "_position": {
+          "type": "vector",
+          "value": "vec4(100.000000, 200.000000, 300.000000, 400.000000)"
+        },
+        "_rotation": {
+          "type": "vector",
+          "value": "vec4(100.000000, 200.000000, 300.000000, 400.000000)"
+        },
+        "_scale": {
+          "type": "vector",
+          "value": "vec4(100.000000, 200.000000, 300.000000, 400.000000)"
+        },
+        "_hitPoints": {
+          "type": "integer",
+          "value": 500
+        },
+        "_actions": {
+          "type": "scope",
+          "value": [
+            {             
+              "class": "ActionCreateAction",
+
+              "_name": {
+                "type": "string",
+                "value": "Create an Action"
+              },
+              "_actionToCreate": {
+                "type": "string",
+                "value": "ActionIntegerIncrement"
+              },
+              "_targetKey": {
+                "type": "string",
+                "value": ""
+              }              
+            }
+          ]
+
+        }
+
+      }
+    ]
+  }
+}

@@ -1,0 +1,32 @@
+﻿  pch.cpp
+  ActionTest.cpp
+  AttributedFoo.cpp
+  AttributedTest.cpp
+  DatumTest.cpp
+  DefaultHashTest.cpp
+  DerivedAttributedFoo.cpp
+  EventClearQueSubscriber.cpp
+  GameStateSubscriber.cpp
+  EventQueueSubscriber.cpp
+  EventTest.cpp
+  FactoryTest.cpp
+  Foo.cpp
+  FooSubscriber.cpp
+  FooTest.cpp
+  AvatarFoo.cpp
+  GameObjectTest.cpp
+  JsonIntegerHelper.cpp
+  JsonParsingTest.cpp
+  ScopeTest.cpp
+  SListTest.cpp
+  Compiling...
+  SubscriberAddSubscriber.cpp
+  SuperDerivedAttributedFoo.cpp
+  UnorderdMapTest.cpp
+  VectorTest.cpp
+     Creating library C:\Dev\depot\Students\CH18\Alexander.Soto\Prog2\FieaGameEngine\build\bin\UnitTest.Library.Desktop\x64\Release\UnitTest.Library.Desktop.lib and object C:\Dev\depot\Students\CH18\Alexander.Soto\Prog2\FieaGameEngine\build\bin\UnitTest.Library.Desktop\x64\Release\UnitTest.Library.Desktop.exp
+  Generating code
+  Previous IPDB not found, fall back to full compilation.
+  All 3965 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Finished generating code
+  UnitTest.Library.Desktop.vcxproj -> C:\Dev\depot\Students\CH18\Alexander.Soto\Prog2\FieaGameEngine\build\bin\UnitTest.Library.Desktop\x64\Release\UnitTest.Library.Desktop.dll

@@ -1,0 +1,7 @@
+{
+  "StringArray": 
+  {
+    "type": "string",
+    "value": [ "ABC", "DEF", "GHI", "JKL", "MNO" ]
+  }
+}

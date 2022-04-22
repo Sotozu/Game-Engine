@@ -1,0 +1,7 @@
+﻿  pch.cpp
+  Program.cpp
+  Generating code
+  Previous IPDB not found, fall back to full compilation.
+  All 22 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Finished generating code
+  Game.DirectX.Desktop.vcxproj -> C:\Dev\depot\Students\CH18\Alexander.Soto\Prog2\FieaGameEngine\build\bin\Game.DirectX.Desktop\x64\Release\Game.DirectX.Desktop.exe
