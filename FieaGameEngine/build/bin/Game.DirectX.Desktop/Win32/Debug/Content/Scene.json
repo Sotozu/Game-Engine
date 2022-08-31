@@ -1,0 +1,165 @@
+{
+  "_name": {
+    "type": "string",
+    "value": "Test GameObject"
+  },
+  "_position": {
+    "type": "vector",
+    "value": "vec4(1.000000, 2.000000, 3.000000, 4.000000)"
+
+  },
+  "_rotation": {
+    "type": "vector",
+    "value": "vec4(1.000000, 2.000000, 3.000000, 4.000000)"
+
+  },
+  "_scale": {
+    "type": "vector",
+    "value": "vec4(1.000000, 2.000000, 3.000000, 4.000000)"
+
+  },
+  "_children": {
+    "type": "scope",
+    "value": [
+      {
+        "class": "AvatarFoo",
+
+        "_name": {
+          "type": "string",
+          "value": "AvatarFoo_1"
+        },
+        "_position": {
+          "type": "vector",
+          "value": "vec4(100.000000, 200.000000, 300.000000, 400.000000)"
+        },
+        "_rotation": {
+          "type": "vector",
+          "value": "vec4(100.000000, 200.000000, 300.000000, 400.000000)"
+        },
+        "_scale": {
+          "type": "vector",
+          "value": "vec4(100.000000, 200.000000, 300.000000, 400.000000)"
+        },
+        "_hitPoints": {
+          "type": "integer",
+          "value": 500
+        },
+        "_actions": {
+          "type": "scope",
+          "value": [
+            {
+              "class": "ActionStaticMesh",
+
+              "_name": {
+                "type": "string",
+                "value": "AvatarFoo_SMC_1"
+              },
+              "_filePath": {
+                "type": "string",
+                "value": "NOT A REAL FILE PATH"
+              },
+              "_isVisible": {
+                "type": "bool",
+                "value": true
+              }
+            }
+          ]
+        }
+
+      },
+      {
+        "class": "AvatarFoo",
+
+        "_name": {
+          "type": "string",
+          "value": "AvatarFoo_2"
+        },
+        "_position": {
+          "type": "vector",
+          "value": "vec4(100.000000, 200.000000, 300.000000, 400.000000)"
+        },
+        "_rotation": {
+          "type": "vector",
+          "value": "vec4(100.000000, 200.000000, 300.000000, 400.000000)"
+        },
+        "_scale": {
+          "type": "vector",
+          "value": "vec4(100.000000, 200.000000, 300.000000, 400.000000)"
+        },
+        "_hitPoints": {
+          "type": "integer",
+          "value": 500
+        },
+        "_actions": {
+          "type": "scope",
+          "value": [
+            {
+              "class": "ActionStaticMesh",
+
+              "_name": {
+                "type": "string",
+                "value": "AvatarFoo_SMC_2"
+              },
+              "_filePath": {
+                "type": "string",
+                "value": "NOT A REAL FILE PATH"
+              },
+              "_isVisible": {
+                "type": "bool",
+                "value": true
+              }
+            }
+          ]
+        }
+
+      },
+      {
+        "class": "AvatarFoo",
+
+        "_name": {
+          "type": "string",
+          "value": "AvatarFoo_3"
+        },
+        "_position": {
+          "type": "vector",
+          "value": "vec4(100.000000, 200.000000, 300.000000, 400.000000)"
+        },
+        "_rotation": {
+          "type": "vector",
+          "value": "vec4(100.000000, 200.000000, 300.000000, 400.000000)"
+        },
+        "_scale": {
+          "type": "vector",
+          "value": "vec4(100.000000, 200.000000, 300.000000, 400.000000)"
+        },
+        "_hitPoints": {
+          "type": "integer",
+          "value": 500
+        },
+        "_actions": {
+          "type": "scope",
+          "value": [
+            {
+              "class": "ActionStaticMesh",
+
+              "_name": {
+                "type": "string",
+                "value": "AvatarFoo_SMC_3"
+              },
+              "_filePath": {
+                "type": "string",
+                "value": "NOT A REAL FILE PATH"
+              },
+              "_isVisible": {
+                "type": "bool",
+                "value": true
+              }
+            }
+          ]
+        }
+
+      }
+
+    ]
+  }
+}
