@@ -1,0 +1,253 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="FooTest.cpp">
+      <Filter>Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="Foo.cpp">
+      <Filter>Test Support Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="AttributedFoo.cpp">
+      <Filter>Test Support Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="DerivedAttributedFoo.cpp">
+      <Filter>Test Support Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="JsonIntegerHelper.cpp">
+      <Filter>Test Support Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="AvatarFoo.cpp">
+      <Filter>Test Support Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="SuperDerivedAttributedFoo.cpp">
+      <Filter>Test Support Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="ActionTest.cpp">
+      <Filter>Tests\Actions</Filter>
+    </ClCompile>
+    <ClCompile Include="SListTest.cpp">
+      <Filter>Tests\Containers</Filter>
+    </ClCompile>
+    <ClCompile Include="VectorTest.cpp">
+      <Filter>Tests\Containers</Filter>
+    </ClCompile>
+    <ClCompile Include="UnorderdMapTest.cpp">
+      <Filter>Tests\Containers</Filter>
+    </ClCompile>
+    <ClCompile Include="JsonParsingTest.cpp">
+      <Filter>Tests\Deserialization</Filter>
+    </ClCompile>
+    <ClCompile Include="ScopeTest.cpp">
+      <Filter>Tests\Kernal</Filter>
+    </ClCompile>
+    <ClCompile Include="FactoryTest.cpp">
+      <Filter>Tests\GameEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="GameObjectTest.cpp">
+      <Filter>Tests\GameEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="AttributedTest.cpp">
+      <Filter>Tests\GameEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="DatumTest.cpp">
+      <Filter>Tests\Kernal</Filter>
+    </ClCompile>
+    <ClCompile Include="DefaultHashTest.cpp">
+      <Filter>Tests\Kernal</Filter>
+    </ClCompile>
+    <ClCompile Include="EventTest.cpp">
+      <Filter>Tests\Event</Filter>
+    </ClCompile>
+    <ClCompile Include="FooSubscriber.cpp">
+      <Filter>Test Support Classes\Event</Filter>
+    </ClCompile>
+    <ClCompile Include="GameStateSubscriber.cpp">
+      <Filter>Test Support Classes\Event</Filter>
+    </ClCompile>
+    <ClCompile Include="EventQueueSubscriber.cpp">
+      <Filter>Test Support Classes\Event</Filter>
+    </ClCompile>
+    <ClCompile Include="EventClearQueSubscriber.cpp">
+      <Filter>Test Support Classes\Event</Filter>
+    </ClCompile>
+    <ClCompile Include="SubscriberAddSubscriber.cpp">
+      <Filter>Test Support Classes\Event</Filter>
+    </ClCompile>
+    <ClCompile Include="ActionStaticMeshTest.cpp">
+      <Filter>Tests\PPP</Filter>
+    </ClCompile>
+    <ClCompile Include="pch.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ToStringSpecializations.h">
+      <Filter>Test Support Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="Foo.h">
+      <Filter>Test Support Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="AttributedFoo.h">
+      <Filter>Test Support Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="DerivedAttributedFoo.h">
+      <Filter>Test Support Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Test Support Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="JsonIntegerHelper.h">
+      <Filter>Test Support Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="AvatarFoo.h">
+      <Filter>Test Support Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="SuperDerivedAttributedFoo.h">
+      <Filter>Test Support Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="FooSubscriber.h">
+      <Filter>Test Support Classes\Event</Filter>
+    </ClInclude>
+    <ClInclude Include="EventQueueSubscriber.h">
+      <Filter>Test Support Classes\Event</Filter>
+    </ClInclude>
+    <ClInclude Include="GameStateSubscriber.h">
+      <Filter>Test Support Classes\Event</Filter>
+    </ClInclude>
+    <ClInclude Include="EventClearQueSubscriber.h">
+      <Filter>Test Support Classes\Event</Filter>
+    </ClInclude>
+    <ClInclude Include="SubscriberAddSubscriber.h">
+      <Filter>Test Support Classes\Event</Filter>
+    </ClInclude>
+    <ClInclude Include="pch.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Tests">
+      <UniqueIdentifier>{e9d46128-dec5-4f16-a6f6-676b26e48bcc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Test Json Files">
+      <UniqueIdentifier>{7f6054bb-6079-46fe-95c6-483841503ddf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Test Support Classes">
+      <UniqueIdentifier>{b5299d37-40dd-4b3f-a029-18807426ee55}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tests\Containers">
+      <UniqueIdentifier>{77396cfd-6fa1-4c32-a48e-d545ee95bfe8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tests\Actions">
+      <UniqueIdentifier>{69daece6-20e5-4411-a92e-bc956574ade6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tests\Deserialization">
+      <UniqueIdentifier>{ff6f0203-8ab5-4f9f-8350-1712fad3cf7c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tests\Event">
+      <UniqueIdentifier>{7541756a-1f86-4026-b1ba-cea833ee2311}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tests\Kernal">
+      <UniqueIdentifier>{9f169583-e937-4088-b90d-260f7128a6f6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tests\GameEngine">
+      <UniqueIdentifier>{7de033eb-da37-4235-9173-d26c7cc81dcd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Test Support Classes\Event">
+      <UniqueIdentifier>{07d849bb-0c46-4a37-9e20-6ac7149edf71}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tests\PPP">
+      <UniqueIdentifier>{80a1be55-fdc6-4f4d-aafc-a5009be62c31}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <CopyFileToFolders Include="AttributedFooWithAuxiliaryAttributes.json">
+      <Filter>Test Json Files</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="DatumFloatArray.json">
+      <Filter>Test Json Files</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="DatumFloatScalar.json">
+      <Filter>Test Json Files</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="DatumIntegerArray.json">
+      <Filter>Test Json Files</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="DatumIntegerScalar.json">
+      <Filter>Test Json Files</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="DatumStringArray.json">
+      <Filter>Test Json Files</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="DatumStringScalar.json">
+      <Filter>Test Json Files</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="DerivedAttributedFoo.json">
+      <Filter>Test Json Files</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="ScopeArray.json">
+      <Filter>Test Json Files</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="ScopeComplex.json">
+      <Filter>Test Json Files</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="ScopeMultiLayer.json">
+      <Filter>Test Json Files</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="ScopeSingleLayer.json">
+      <Filter>Test Json Files</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="SuperDerivedAttributedFoo.json">
+      <Filter>Test Json Files</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="VectorAndMatrixDatums.json">
+      <Filter>Test Json Files</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="VectorInteger.json">
+      <Filter>Test Json Files</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="GameObject.json">
+      <Filter>Test Json Files</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="ActionIncrement.json">
+      <Filter>Test Json Files</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="ActionList.json">
+      <Filter>Test Json Files</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="GameObjectCreateAction.json">
+      <Filter>Test Json Files</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="ActionCreateAction.json">
+      <Filter>Test Json Files</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="ActionDestroyAction.json">
+      <Filter>Test Json Files</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="ActionIfAction.json">
+      <Filter>Test Json Files</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="AttributedFoo1.json">
+      <Filter>Test Json Files</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="ActionExpression.json">
+      <Filter>Test Json Files</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="ActionMeshRenderer.json">
+      <Filter>Test Json Files</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="AvatarFooBoolean.json">
+      <Filter>Test Json Files</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="Light.json">
+      <Filter>Test Json Files</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="PointLight.json">
+      <Filter>Test Json Files</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="Model.json">
+      <Filter>Test Json Files</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="PPPScene.json">
+      <Filter>Test Json Files</Filter>
+    </CopyFileToFolders>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+</Project>

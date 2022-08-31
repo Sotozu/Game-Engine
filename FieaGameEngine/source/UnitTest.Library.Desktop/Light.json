@@ -1,0 +1,39 @@
+{
+  "_name": {
+    "type": "string",
+    "value": "Test GameObject"
+  },
+  "_position": {
+    "type": "vector",
+    "value": "vec4(1.000000, 2.000000, 3.000000, 4.000000)"
+
+  },
+  "_rotation": {
+    "type": "vector",
+    "value": "vec4(1.000000, 2.000000, 3.000000, 4.000000)"
+
+  },
+  "_scale": {
+    "type": "vector",
+    "value": "vec4(1.000000, 2.000000, 3.000000, 4.000000)"
+
+  },
+  "_children": {
+    "type": "scope",
+    "value": [
+      {
+        "class": "Light",
+
+        "_name": {
+          "type": "string",
+          "value": "light_1"
+        },
+
+        "mColor": {
+          "type": "vector",
+          "value": "vec4(0.100000, 0.200000, 0.300000, 0.400000)"
+        }
+      }
+    ]
+  }
+}

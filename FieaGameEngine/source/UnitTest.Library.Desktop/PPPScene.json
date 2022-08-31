@@ -1,0 +1,257 @@
+{
+  "_name": {
+    "type": "string",
+    "value": "Root GameObject"
+  },
+  "_position": {
+    "type": "vector",
+    "value": "vec4(1.000000, 2.000000, 3.000000, 4.000000)"
+
+  },
+  "_rotation": {
+    "type": "vector",
+    "value": "vec4(1.000000, 2.000000, 3.000000, 4.000000)"
+
+  },
+  "_scale": {
+    "type": "vector",
+    "value": "vec4(1.000000, 2.000000, 3.000000, 4.000000)"
+
+  },
+
+  "_children": {
+    "type": "scope",
+    "value": [
+      {
+        "class": "GameObject",
+
+        "_name": {
+          "type": "string",
+          "value": "GameObject_1"
+        },
+        "_position": {
+          "type": "vector",
+          "value": "vec4(-10.000000, 0.000000, 0.000000, 0.000000)"
+        },
+        "_rotation": {
+          "type": "vector",
+          "value": "vec4(100.000000, 200.000000, 300.000000, 400.000000)"
+        },
+        "_scale": {
+          "type": "vector",
+          "value": "vec4(100.000000, 200.000000, 300.000000, 400.000000)"
+        },
+        "_actions": {
+          "type": "scope",
+          "value": [
+            {
+              "class": "ActionMeshRenderer",
+
+              "_name": {
+                "type": "string",
+                "value": "ActionMeshRenderer_1"
+              },
+
+              "_visible": {
+                "type": "bool",
+                "value": true
+              },
+              "_model": {
+                "type": "scope",
+                "value": {
+                  "class": "Model",
+
+                  "_name": {
+                    "type": "string",
+                    "value": "Model_1"
+                  },
+                  "_filePath": {
+                    "type": "string",
+                    "value": "Models\\Rock2.fbx.bin"
+                  }
+
+                }
+              },
+              "_material": {
+                "type": "scope",
+                "value": {
+                  "class": "TextureMaterial",
+
+                  "_vertexShaderFilePath": {
+                    "type": "string",
+                    "value": "Shaders\\TexturedModelDemoVS.cso"
+                  },
+
+                  "_pixelShaderFilePath": {
+                    "type": "string",
+                    "value": "Shaders\\TexturedModelDemoPS.cso"
+                  },
+
+                  "_colorMap": {
+                    "type": "string",
+                    "value": "Textures\\SaturnComposite.dds"
+                  }
+                }
+              }
+            }
+          ]
+        }
+      },
+
+      {
+        "class": "GameObject",
+
+        "_name": {
+          "type": "string",
+          "value": "GameObject_2"
+        },
+        "_position": {
+          "type": "vector",
+          "value": "vec4(10.000000, 0.000000, 0.000000, 0.000000)"
+        },
+        "_rotation": {
+          "type": "vector",
+          "value": "vec4(100.000000, 200.000000, 300.000000, 400.000000)"
+        },
+        "_scale": {
+          "type": "vector",
+          "value": "vec4(100.000000, 200.000000, 300.000000, 400.000000)"
+        },
+        "_actions": {
+          "type": "scope",
+          "value": [
+            {
+              "class": "ActionMeshRenderer",
+
+              "_name": {
+                "type": "string",
+                "value": "ActionMeshRenderer_2"
+              },
+
+              "_visible": {
+                "type": "bool",
+                "value": true
+              },
+              "_model": {
+                "type": "scope",
+                "value": {
+                  "class": "Model",
+
+                  "_name": {
+                    "type": "string",
+                    "value": "Model_2"
+                  },
+                  "_filePath": {
+                    "type": "string",
+                    "value": "Models\\Sphere1.obj.bin"
+                  }
+
+                }
+              },
+              "_material": {
+                "type": "scope",
+                "value": {
+                  "class": "TextureMaterial",
+
+                  "_vertexShaderFilePath": {
+                    "type": "string",
+                    "value": "Shaders\\TexturedModelDemoVS.cso"
+                  },
+
+                  "_pixelShaderFilePath": {
+                    "type": "string",
+                    "value": "Shaders\\TexturedModelDemoPS.cso"
+                  },
+
+                  "_colorMap": {
+                    "type": "string",
+                    "value": "Textures\\EarthComposite.dds"
+                  }
+                }
+              }
+            }
+          ]
+        }
+      },
+
+      {
+        "class": "GameObject",
+
+        "_name": {
+          "type": "string",
+          "value": "GameObject_3"
+        },
+        "_position": {
+          "type": "vector",
+          "value": "vec4(-99.000000, 0.000000, 10.000000, 0.000000)"
+        },
+        "_rotation": {
+          "type": "vector",
+          "value": "vec4(100.000000, 200.000000, 300.000000, 400.000000)"
+        },
+        "_scale": {
+          "type": "vector",
+          "value": "vec4(100.000000, 200.000000, 300.000000, 400.000000)"
+        },
+        "_actions": {
+          "type": "scope",
+          "value": [
+            {
+              "class": "ActionMeshRenderer",
+
+              "_name": {
+                "type": "string",
+                "value": "ActionMeshRenderer_3"
+              },
+
+              "_visible": {
+                "type": "bool",
+                "value": true
+              },
+              "_model": {
+                "type": "scope",
+                "value": {
+                  "class": "Model",
+
+                  "_name": {
+                    "type": "string",
+                    "value": "Model_3"
+                  },
+                  "_filePath": {
+                    "type": "string",
+                    "value": "Models\\Sphere1.obj.bin"
+                  }
+
+                }
+              },
+              "_material": {
+                "type": "scope",
+                "value": {
+                  "class": "TextureMaterial",
+
+                  "_vertexShaderFilePath": {
+                    "type": "string",
+                    "value": "Shaders\\TexturedModelDemoVS.cso"
+                  },
+
+                  "_pixelShaderFilePath": {
+                    "type": "string",
+                    "value": "Shaders\\TexturedModelDemoPS.cso"
+                  },
+
+                  "_colorMap": {
+                    "type": "string",
+                    "value": "Textures\\EarthComposite.dds"
+                  }
+                }
+              }
+            }
+          ]
+        }
+      }
+
+
+    ]
+  }
+
+}

@@ -1,0 +1,779 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="$(MSBuildThisFileDirectory)IJsonCoordinator.cpp">
+      <Filter>Alex\Deserialization</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)IJsonParseHelper.cpp">
+      <Filter>Alex\Deserialization</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)JsonScopeHelper.cpp">
+      <Filter>Alex\Deserialization</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Datum.cpp">
+      <Filter>Alex\Kernal</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Scope.cpp">
+      <Filter>Alex\Kernal</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Action.cpp">
+      <Filter>Alex\Game\Actions</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)ActionCreateAction.cpp">
+      <Filter>Alex\Game\Actions</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)ActionDestroyAction.cpp">
+      <Filter>Alex\Game\Actions</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)ActionIfAction.cpp">
+      <Filter>Alex\Game\Actions</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)ActionIntegerIncrement.cpp">
+      <Filter>Alex\Game\Actions</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)ActionList.cpp">
+      <Filter>Alex\Game\Actions</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)EventPublisher.cpp">
+      <Filter>Alex\Game\Event</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)EventQueue.cpp">
+      <Filter>Alex\Game\Event</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)ActionExpression.cpp">
+      <Filter>Alex\Game\Actions</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)BlendStates.cpp">
+      <Filter>DirectXPaul\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)PixelShader.cpp">
+      <Filter>DirectXPaul\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)RasterizerStates.cpp">
+      <Filter>DirectXPaul\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)RenderTarget.cpp">
+      <Filter>DirectXPaul\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)SamplerStates.cpp">
+      <Filter>DirectXPaul\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Shader.cpp">
+      <Filter>DirectXPaul\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Texture.cpp">
+      <Filter>DirectXPaul\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Texture2D.cpp">
+      <Filter>DirectXPaul\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)TextureCube.cpp">
+      <Filter>DirectXPaul\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)VertexDeclarations.cpp">
+      <Filter>DirectXPaul\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)VertexShader.cpp">
+      <Filter>DirectXPaul\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)ColorHelper.cpp">
+      <Filter>DirectXPaul\Helpers</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)DirectXHelper.cpp">
+      <Filter>DirectXPaul\Helpers</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)MatrixHelper.cpp">
+      <Filter>DirectXPaul\Helpers</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)RenderStateHelper.cpp">
+      <Filter>DirectXPaul\Helpers</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)StreamHelper.cpp">
+      <Filter>DirectXPaul\Helpers</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)StringHelper.cpp">
+      <Filter>DirectXPaul\Helpers</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)TextureHelper.cpp">
+      <Filter>DirectXPaul\Helpers</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)VectorHelper.cpp">
+      <Filter>DirectXPaul\Helpers</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)DirectionalLight.cpp">
+      <Filter>DirectXPaul\Lights</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Light.cpp">
+      <Filter>DirectXPaul\Lights</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)PointLight.cpp">
+      <Filter>DirectXPaul\Lights</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)SpotLight.cpp">
+      <Filter>DirectXPaul\Lights</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Point.cpp">
+      <Filter>DirectXPaul\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Rectangle.cpp">
+      <Filter>DirectXPaul\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)ServiceContainer.cpp">
+      <Filter>DirectXPaul\Misc</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Utility.cpp">
+      <Filter>DirectXPaul\Misc</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Mesh.cpp">
+      <Filter>DirectXPaul\Models</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)ModelResource.cpp">
+      <Filter>DirectXPaul\Models</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)ModelMaterial.cpp">
+      <Filter>DirectXPaul\Models</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)GameClock.cpp">
+      <Filter>DirectXPaul\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)GameException.cpp">
+      <Filter>DirectXPaul\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)GameTime.cpp">
+      <Filter>DirectXPaul\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)DefaultHash.cpp">
+      <Filter>Alex\Misc</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)RendererDirectX.cpp">
+      <Filter>Alex\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)ContentManager.cpp">
+      <Filter>Alex\Game\Content</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)ContentTypeReader.cpp">
+      <Filter>Alex\Game\Content</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)ModelReader.cpp">
+      <Filter>Alex\Game\Content\ContentReaders</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)PixelShaderReader.cpp">
+      <Filter>Alex\Game\Content\ContentReaders</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Texture2DReader.cpp">
+      <Filter>Alex\Game\Content\ContentReaders</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)TextureCubeReader.cpp">
+      <Filter>Alex\Game\Content\ContentReaders</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)VertexShaderReader.cpp">
+      <Filter>Alex\Game\Content\ContentReaders</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)ContentTypeReaderManager.cpp">
+      <Filter>Alex\Game\Content\ContentReaders</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)KeyboardComponent.cpp">
+      <Filter>Alex\Input</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Camera.cpp">
+      <Filter>Alex\Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)FirstPersonCamera.cpp">
+      <Filter>Alex\Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)OrthographicCamera.cpp">
+      <Filter>Alex\Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)PerspectiveCamera.cpp">
+      <Filter>Alex\Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)GamePadComponent.cpp">
+      <Filter>Alex\Input</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)MouseComponent.cpp">
+      <Filter>Alex\Input</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)ImGuiComponent.cpp">
+      <Filter>Alex\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)BasicMaterial.cpp">
+      <Filter>Alex\Materials</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Material.cpp">
+      <Filter>Alex\Materials</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)FpsComponent.cpp">
+      <Filter>Alex\Misc</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Grid.cpp">
+      <Filter>Alex\Misc</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)ProxyModel.cpp">
+      <Filter>Alex\Misc</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)SkyboxMaterial.cpp">
+      <Filter>Alex\Materials</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Skybox.cpp">
+      <Filter>Alex\Misc</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)InputComponent.cpp">
+      <Filter>Alex\Input</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)imgui_impl_dx11.cpp">
+      <Filter>Alex\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)pch.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Bone.cpp">
+      <Filter>DirectXPaul\Models</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)BoneAnimation.cpp">
+      <Filter>DirectXPaul\Models</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)SceneNode.cpp">
+      <Filter>DirectXPaul\Models</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)AnimationClip.cpp">
+      <Filter>DirectXPaul\Models</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)AnimationPlayer.cpp">
+      <Filter>DirectXPaul\Models</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Keyframe.cpp">
+      <Filter>DirectXPaul\Models</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)ActionMeshRenderer.cpp">
+      <Filter>Alex\Game\PPP In Progress</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Attributed.cpp">
+      <Filter>Alex\Game\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)DrawableGameComponent.cpp">
+      <Filter>Alex\Game\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Game.cpp">
+      <Filter>Alex\Game\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)GameComponent.cpp">
+      <Filter>Alex\Game\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)GameObject.cpp">
+      <Filter>Alex\Game\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)GameState.cpp">
+      <Filter>Alex\Game\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)LightRegistry.inl">
+      <Filter>Alex\Game\PPP In Progress</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)PointLightMaterial.cpp">
+      <Filter>Alex\Materials</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)TextureMaterial.cpp">
+      <Filter>Alex\Materials</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)AvatarFoo.cpp">
+      <Filter>Alex\Game\PPP In Progress</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Model.cpp">
+      <Filter>DirectXPaul\Models</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="$(MSBuildThisFileDirectory)UnorderedMap.h">
+      <Filter>Alex\Containers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)Vector.h">
+      <Filter>Alex\Containers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)SList.h">
+      <Filter>Alex\Containers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)Stack.h">
+      <Filter>Alex\Containers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)IJsonCoordinator.h">
+      <Filter>Alex\Deserialization</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)IJsonParseHelper.h">
+      <Filter>Alex\Deserialization</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)JsonScopeHelper.h">
+      <Filter>Alex\Deserialization</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)Datum.h">
+      <Filter>Alex\Kernal</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)Scope.h">
+      <Filter>Alex\Kernal</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)RTTI.h">
+      <Filter>Alex\Kernal</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)Action.h">
+      <Filter>Alex\Game\Actions</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)ActionCreateAction.h">
+      <Filter>Alex\Game\Actions</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)ActionDestroyAction.h">
+      <Filter>Alex\Game\Actions</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)ActionIfAction.h">
+      <Filter>Alex\Game\Actions</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)ActionIntegerIncrement.h">
+      <Filter>Alex\Game\Actions</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)ActionList.h">
+      <Filter>Alex\Game\Actions</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)Event.h">
+      <Filter>Alex\Game\Event</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)EventPublisher.h">
+      <Filter>Alex\Game\Event</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)IEventSubscriber.h">
+      <Filter>Alex\Game\Event</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)EventQueue.h">
+      <Filter>Alex\Game\Event</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)ActionExpression.h">
+      <Filter>Alex\Game\Actions</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)DefaultHash.h">
+      <Filter>Alex\Kernal</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)BlendStates.h">
+      <Filter>DirectXPaul\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)PixelShader.h">
+      <Filter>DirectXPaul\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)RasterizerStates.h">
+      <Filter>DirectXPaul\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)RenderTarget.h">
+      <Filter>DirectXPaul\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)SamplerStates.h">
+      <Filter>DirectXPaul\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)Shader.h">
+      <Filter>DirectXPaul\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)Texture.h">
+      <Filter>DirectXPaul\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)Texture2D.h">
+      <Filter>DirectXPaul\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)TextureCube.h">
+      <Filter>DirectXPaul\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)VertexDeclarations.h">
+      <Filter>DirectXPaul\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)VertexShader.h">
+      <Filter>DirectXPaul\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)ColorHelper.h">
+      <Filter>DirectXPaul\Helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)DirectXHelper.h">
+      <Filter>DirectXPaul\Helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)MatrixHelper.h">
+      <Filter>DirectXPaul\Helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)RenderStateHelper.h">
+      <Filter>DirectXPaul\Helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)StreamHelper.h">
+      <Filter>DirectXPaul\Helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)StringHelper.h">
+      <Filter>DirectXPaul\Helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)TextureHelper.h">
+      <Filter>DirectXPaul\Helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)VectorHelper.h">
+      <Filter>DirectXPaul\Helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)DirectionalLight.h">
+      <Filter>DirectXPaul\Lights</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)Light.h">
+      <Filter>DirectXPaul\Lights</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)PointLight.h">
+      <Filter>DirectXPaul\Lights</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)SpotLight.h">
+      <Filter>DirectXPaul\Lights</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)Point.h">
+      <Filter>DirectXPaul\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)Rectangle.h">
+      <Filter>DirectXPaul\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)ServiceContainer.h">
+      <Filter>DirectXPaul\Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)Utility.h">
+      <Filter>DirectXPaul\Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)ModelMaterial.h">
+      <Filter>DirectXPaul\Models</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)Mesh.h">
+      <Filter>DirectXPaul\Models</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)ModelResource.h">
+      <Filter>DirectXPaul\Models</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)GameClock.h">
+      <Filter>DirectXPaul\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)GameException.h">
+      <Filter>DirectXPaul\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)GameTime.h">
+      <Filter>DirectXPaul\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)RendererDirectX.h">
+      <Filter>Alex\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)ContentManager.h">
+      <Filter>Alex\Game\Content</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)ContentTypeReader.h">
+      <Filter>Alex\Game\Content</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)ModelReader.h">
+      <Filter>Alex\Game\Content\ContentReaders</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)VertexShaderReader.h">
+      <Filter>Alex\Game\Content\ContentReaders</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)PixelShaderReader.h">
+      <Filter>Alex\Game\Content\ContentReaders</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)Texture2DReader.h">
+      <Filter>Alex\Game\Content\ContentReaders</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)TextureCubeReader.h">
+      <Filter>Alex\Game\Content\ContentReaders</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)ContentTypeReaderManager.h">
+      <Filter>Alex\Game\Content\ContentReaders</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)KeyboardComponent.h">
+      <Filter>Alex\Input</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)Camera.h">
+      <Filter>Alex\Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)FirstPersonCamera.h">
+      <Filter>Alex\Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)OrthographicCamera.h">
+      <Filter>Alex\Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)PerspectiveCamera.h">
+      <Filter>Alex\Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)GamePadComponent.h">
+      <Filter>Alex\Input</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)MouseComponent.h">
+      <Filter>Alex\Input</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)ImGuiComponent.h">
+      <Filter>Alex\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)BasicMaterial.h">
+      <Filter>Alex\Materials</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)Material.h">
+      <Filter>Alex\Materials</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)FpsComponent.h">
+      <Filter>Alex\Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)Grid.h">
+      <Filter>Alex\Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)ProxyModel.h">
+      <Filter>Alex\Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)SkyboxMaterial.h">
+      <Filter>Alex\Materials</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)Skybox.h">
+      <Filter>Alex\Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)InputComponent.h">
+      <Filter>Alex\Input</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)imgui_impl_dx11.h">
+      <Filter>Alex\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)pch.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Vertex.h">
+      <Filter>Alex\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)Bone.h">
+      <Filter>DirectXPaul\Models</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)BoneAnimation.h">
+      <Filter>DirectXPaul\Models</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)SceneNode.h">
+      <Filter>DirectXPaul\Models</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)AnimationClip.h">
+      <Filter>DirectXPaul\Models</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)AnimationPlayer.h">
+      <Filter>DirectXPaul\Models</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)Keyframe.h">
+      <Filter>DirectXPaul\Models</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)ActionMeshRenderer.h">
+      <Filter>Alex\Game\PPP In Progress</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)Attributed.h">
+      <Filter>Alex\Game\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)DrawableGameComponent.h">
+      <Filter>Alex\Game\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)Factory.h">
+      <Filter>Alex\Game\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)Game.h">
+      <Filter>Alex\Game\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)GameComponent.h">
+      <Filter>Alex\Game\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)GameObject.h">
+      <Filter>Alex\Game\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)GameState.h">
+      <Filter>Alex\Game\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)TypeRegistry.h">
+      <Filter>Alex\Game\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)LightRegistry.h">
+      <Filter>Alex\Game\PPP In Progress</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)PointLightMaterial.h">
+      <Filter>Alex\Materials</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)TextureMaterial.h">
+      <Filter>Alex\Materials</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)AvatarFoo.h">
+      <Filter>Alex\Game\PPP In Progress</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)Model.h">
+      <Filter>DirectXPaul\Models</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="$(MSBuildThisFileDirectory)UnorderedMap.inl">
+      <Filter>Alex\Containers</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Vector.inl">
+      <Filter>Alex\Containers</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Stack.inl">
+      <Filter>Alex\Containers</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)SList.inl">
+      <Filter>Alex\Containers</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)IJsonCoordinator.inl">
+      <Filter>Alex\Deserialization</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Datum.inl">
+      <Filter>Alex\Kernal</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Scope.inl">
+      <Filter>Alex\Kernal</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Action.inl">
+      <Filter>Alex\Game\Actions</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)ActionCreateAction.inl">
+      <Filter>Alex\Game\Actions</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)ActionDestroyAction.inl">
+      <Filter>Alex\Game\Actions</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)ActionIfAction.inl">
+      <Filter>Alex\Game\Actions</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)ActionIntegerIncrement.inl">
+      <Filter>Alex\Game\Actions</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)ActionList.inl">
+      <Filter>Alex\Game\Actions</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Event.inl">
+      <Filter>Alex\Game\Event</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)EventQueue.inl">
+      <Filter>Alex\Game\Event</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)ActionExpression.inl">
+      <Filter>Alex\Game\Actions</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)packages.config" />
+    <None Include="$(MSBuildThisFileDirectory)DefaultHash.inl">
+      <Filter>Alex\Kernal</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Texture.inl">
+      <Filter>DirectXPaul\Graphics</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)VertexDeclarations.inl">
+      <Filter>DirectXPaul\Graphics</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)VectorHelper.inl">
+      <Filter>DirectXPaul\Helpers</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Light.inl">
+      <Filter>DirectXPaul\Lights</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Point.inl">
+      <Filter>DirectXPaul\Math</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Rectangle.inl">
+      <Filter>DirectXPaul\Math</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)RendererDirectX.inl">
+      <Filter>Alex\Graphics</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)ContentManager.inl">
+      <Filter>Alex\Game\Content</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)ContentTypeReader.inl">
+      <Filter>Alex\Game\Content</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Material.inl">
+      <Filter>Alex\Materials</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Attributed.inl">
+      <Filter>Alex\Game\Core</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Factory.inl">
+      <Filter>Alex\Game\Core</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\Library.Desktop\Game.inl">
+      <Filter>Alex\Game\Core</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)GameObject.inl">
+      <Filter>Alex\Game\Core</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)GameState.inl">
+      <Filter>Alex\Game\Core</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)TypeRegistry.inl">
+      <Filter>Alex\Game\Core</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)ActionMeshRenderer.inl">
+      <Filter>Alex\Game\PPP In Progress</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)BasicMaterial.inl">
+      <Filter>Alex\Materials</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Model.inl">
+      <Filter>DirectXPaul\Models</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="DirectXPaul">
+      <UniqueIdentifier>{fd838743-f0e2-4989-a08c-123a1a687638}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DirectXPaul\Models">
+      <UniqueIdentifier>{3c8dbd73-dec4-4b96-9d67-fba7209b52d4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DirectXPaul\Lights">
+      <UniqueIdentifier>{eaf65f99-6615-464a-80b3-c84bb5a4b7e3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DirectXPaul\Math">
+      <UniqueIdentifier>{8cee2daa-9a8e-400e-80cd-694bb41db77e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DirectXPaul\Misc">
+      <UniqueIdentifier>{b44e8c0e-105b-4cdc-a28c-f50b33bb74bb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DirectXPaul\Graphics">
+      <UniqueIdentifier>{3361e784-61cc-4a5e-ace4-be64bb5e153c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DirectXPaul\Helpers">
+      <UniqueIdentifier>{5b1759aa-e069-4ee1-9f73-692cc96adc81}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Alex">
+      <UniqueIdentifier>{d34a5a02-9ee2-44cc-8d1f-ae0ba3c032af}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Alex\Containers">
+      <UniqueIdentifier>{a93ef62a-1000-4f9a-9a1d-d2a82e395fd5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Alex\Deserialization">
+      <UniqueIdentifier>{b1fde6f2-5274-41e4-b9f7-2690be97a8f8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Alex\Kernal">
+      <UniqueIdentifier>{6bad801a-a835-4614-b55e-fb491e18f914}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DirectXPaul\Game">
+      <UniqueIdentifier>{be9da90d-ed5a-4595-a438-4d821c7b11a0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Alex\Game">
+      <UniqueIdentifier>{05975cde-1a1f-44e8-ac60-695e879bbf3e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Alex\Game\Actions">
+      <UniqueIdentifier>{3b2f3168-b08f-46e8-8681-a7908896f023}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Alex\Game\Event">
+      <UniqueIdentifier>{0ee04093-5a87-4274-8108-1ad4fbdf8552}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Alex\Misc">
+      <UniqueIdentifier>{aeaea865-e7b7-448b-a6eb-16b4545e55c0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Alex\Game\Content">
+      <UniqueIdentifier>{a3894aac-02d3-4c43-b72a-fd94e8e3d3a1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Alex\Graphics">
+      <UniqueIdentifier>{bd82459e-b9b9-4339-8ade-fec72da108d3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Alex\Game\Content\ContentReaders">
+      <UniqueIdentifier>{aca01d90-a79f-42e9-bb13-6268026357f4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Alex\Input">
+      <UniqueIdentifier>{74386c64-2c8c-4aa4-af84-6b82c673f8ea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Alex\Camera">
+      <UniqueIdentifier>{659ce700-3f8b-4f6e-a284-ae46d03a38a4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Alex\ImGui">
+      <UniqueIdentifier>{e0df9e58-efce-4bb4-a20f-55265ae77198}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Alex\Materials">
+      <UniqueIdentifier>{c111c27d-21f5-4f17-8f4b-ef8485bebb3b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Alex\Game\PPP In Progress">
+      <UniqueIdentifier>{a34cc2a9-d8a0-45d5-86fb-cc40225c56fc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Alex\Game\Core">
+      <UniqueIdentifier>{d99e1bf4-384d-46c8-86da-c1fc63db82eb}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

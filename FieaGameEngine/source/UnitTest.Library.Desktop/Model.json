@@ -1,0 +1,25 @@
+{
+  "_name": {
+    "type": "string",
+    "value": "Test GameObject"
+  },
+
+  "_children": {
+    "type": "scope",
+    "value": [
+      {
+        "class": "Model",
+
+        "_name": {
+          "type": "string",
+          "value": "model_1"
+        },
+
+        "_filePath": {
+          "type": "string",
+          "value": "Models\\Sphere1.obj.bin"
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,654 @@
+{
+  "_name": {
+    "type": "string",
+    "value": "Root GameObject"
+  },
+  "_position": {
+    "type": "vector",
+    "value": "vec4(0.000000, 0.000000, 0.000000, 0.000000)"
+
+  },
+  "_rotation": {
+    "type": "vector",
+    "value": "vec4(0.000000, 0.000000, 0.000000, 0.000000)"
+
+  },
+  "_scale": {
+    "type": "vector",
+    "value": "vec4(0.000000, 0.000000, 0.000000, 0.000000)"
+
+  },
+
+  "_children": {
+    "type": "scope",
+    "value": [
+
+      //Game Object 1
+
+      {
+        "class": "AvatarFoo",
+
+        "_name": {
+          "type": "string",
+          "value": "AvatarFoo_1"
+        },
+        "_position": {
+          "type": "vector",
+          "value": "vec4(0.000000, 0.000000, 0.000000, 0.000000)"
+        },
+        "_rotation": {
+          "type": "vector",
+          "value": "vec4(0.000000, 0.000000, 0.000000, 0.000000)"
+        },
+        "_scale": {
+          "type": "vector",
+          "value": "vec4(1.000000, 1.000000, 1.000000, 0.000000)"
+        },
+        "_actions": {
+          "type": "scope",
+          "value": [
+            {
+              "class": "ActionMeshRenderer",
+
+              "_name": {
+                "type": "string",
+                "value": "ActionMeshRenderer_2"
+              },
+
+              "_visible": {
+                "type": "bool",
+                "value": true
+              },
+              "_model": {
+                "type": "scope",
+                "value": {
+                  "class": "Model",
+
+                  "_name": {
+                    "type": "string",
+                    "value": "Model_2"
+                  },
+                  "_filePath": {
+                    "type": "string",
+                    "value": "Models\\Rocks\\Rock1D.fbx.bin"
+                  }
+
+                }
+              },
+              "_material": {
+                "type": "scope",
+                "value": {
+                  "class": "TextureMaterial",
+
+                  "_vertexShaderFilePath": {
+                    "type": "string",
+                    "value": "Shaders\\TexturedModelDemoVS.cso"
+                  },
+
+                  "_pixelShaderFilePath": {
+                    "type": "string",
+                    "value": "Shaders\\TexturedModelDemoPS.cso"
+                  },
+
+                  "_colorMap": {
+                    "type": "string",
+                    "value": "Textures\\Rocks\\Rock1.dds"
+                  }
+                }
+              }
+            }
+          ]
+        }
+      },
+
+      //Game Object 2
+
+      {
+        "class": "AvatarFoo",
+
+        "_name": {
+          "type": "string",
+          "value": "AvatarFoo_1"
+        },
+        "_position": {
+          "type": "vector",
+          "value": "vec4(10.000000, 0.000000, -5.000000, 0.000000)"
+        },
+        "_rotation": {
+          "type": "vector",
+          "value": "vec4(0.000000, 0.000000, 0.000000, 0.000000)"
+        },
+        "_scale": {
+          "type": "vector",
+          "value": "vec4(1.000000, 1.000000, 1.000000, 0.000000)"
+        },
+        "_actions": {
+          "type": "scope",
+          "value": [
+            {
+              "class": "ActionMeshRenderer",
+
+              "_name": {
+                "type": "string",
+                "value": "ActionMeshRenderer_2"
+              },
+
+              "_visible": {
+                "type": "bool",
+                "value": true
+              },
+              "_model": {
+                "type": "scope",
+                "value": {
+                  "class": "Model",
+
+                  "_name": {
+                    "type": "string",
+                    "value": "Model_2"
+                  },
+                  "_filePath": {
+                    "type": "string",
+                    "value": "Models\\Rocks\\Rock3.fbx.bin"
+                  }
+
+                }
+              },
+              "_material": {
+                "type": "scope",
+                "value": {
+                  "class": "TextureMaterial",
+
+                  "_vertexShaderFilePath": {
+                    "type": "string",
+                    "value": "Shaders\\TexturedModelDemoVS.cso"
+                  },
+
+                  "_pixelShaderFilePath": {
+                    "type": "string",
+                    "value": "Shaders\\TexturedModelDemoPS.cso"
+                  },
+
+                  "_colorMap": {
+                    "type": "string",
+                    "value": "Textures\\Rocks\\Rock3.dds"
+                  }
+                }
+              }
+            }
+          ]
+        }
+      },
+
+      //Game Object 3
+
+      {
+        "class": "AvatarFoo",
+
+        "_name": {
+          "type": "string",
+          "value": "AvatarFoo_1"
+        },
+        "_position": {
+          "type": "vector",
+          "value": "vec4(10.000000, 0.000000, 5.000000, 0.000000)"
+        },
+        "_rotation": {
+          "type": "vector",
+          "value": "vec4(0.000000, 0.000000, 0.000000, 0.000000)"
+        },
+        "_scale": {
+          "type": "vector",
+          "value": "vec4(1.000000, 1.000000, 1.000000, 0.000000)"
+        },
+        "_actions": {
+          "type": "scope",
+          "value": [
+            {
+              "class": "ActionMeshRenderer",
+
+              "_name": {
+                "type": "string",
+                "value": "ActionMeshRenderer_2"
+              },
+
+              "_visible": {
+                "type": "bool",
+                "value": true
+              },
+              "_model": {
+                "type": "scope",
+                "value": {
+                  "class": "Model",
+
+                  "_name": {
+                    "type": "string",
+                    "value": "Model_2"
+                  },
+                  "_filePath": {
+                    "type": "string",
+                    "value": "Models\\Rocks\\Rock2.fbx.bin"
+                  }
+
+                }
+              },
+              "_material": {
+                "type": "scope",
+                "value": {
+                  "class": "TextureMaterial",
+
+                  "_vertexShaderFilePath": {
+                    "type": "string",
+                    "value": "Shaders\\TexturedModelDemoVS.cso"
+                  },
+
+                  "_pixelShaderFilePath": {
+                    "type": "string",
+                    "value": "Shaders\\TexturedModelDemoPS.cso"
+                  },
+
+                  "_colorMap": {
+                    "type": "string",
+                    "value": "Textures\\Rocks\\Rock2.dds"
+                  }
+                }
+              }
+            }
+          ]
+        }
+      },
+
+      //Game Object 4
+
+      {
+        "class": "AvatarFoo",
+
+        "_name": {
+          "type": "string",
+          "value": "AvatarFoo_1"
+        },
+        "_position": {
+          "type": "vector",
+          "value": "vec4(5.000000, 0.000000, 0.000000, 0.000000)"
+        },
+        "_rotation": {
+          "type": "vector",
+          "value": "vec4(0.000000, 0.000000, 0.000000, 0.000000)"
+        },
+        "_scale": {
+          "type": "vector",
+          "value": "vec4(1.000000, 1.000000, 1.000000, 0.000000)"
+        },
+        "_actions": {
+          "type": "scope",
+          "value": [
+            {
+              "class": "ActionMeshRenderer",
+
+              "_name": {
+                "type": "string",
+                "value": "ActionMeshRenderer_2"
+              },
+
+              "_visible": {
+                "type": "bool",
+                "value": true
+              },
+              "_model": {
+                "type": "scope",
+                "value": {
+                  "class": "Model",
+
+                  "_name": {
+                    "type": "string",
+                    "value": "Model_2"
+                  },
+                  "_filePath": {
+                    "type": "string",
+                    "value": "Models\\Rocks\\Rock4A.fbx.bin"
+                  }
+
+                }
+              },
+              "_material": {
+                "type": "scope",
+                "value": {
+                  "class": "TextureMaterial",
+
+                  "_vertexShaderFilePath": {
+                    "type": "string",
+                    "value": "Shaders\\TexturedModelDemoVS.cso"
+                  },
+
+                  "_pixelShaderFilePath": {
+                    "type": "string",
+                    "value": "Shaders\\TexturedModelDemoPS.cso"
+                  },
+
+                  "_colorMap": {
+                    "type": "string",
+                    "value": "Textures\\Rocks\\Rock4.dds"
+                  }
+                }
+              }
+            }
+          ]
+        }
+      },
+
+      //Game Object 5
+
+      {
+        "class": "AvatarFoo",
+
+        "_name": {
+          "type": "string",
+          "value": "AvatarFoo_1"
+        },
+        "_position": {
+          "type": "vector",
+          "value": "vec4(10.000000, 0.000000, 10.000000, 0.000000)"
+        },
+        "_rotation": {
+          "type": "vector",
+          "value": "vec4(0.000000, 0.000000, 0.000000, 0.000000)"
+        },
+        "_scale": {
+          "type": "vector",
+          "value": "vec4(1.000000, 1.000000, 1.000000, 0.000000)"
+        },
+        "_actions": {
+          "type": "scope",
+          "value": [
+            {
+              "class": "ActionMeshRenderer",
+
+              "_name": {
+                "type": "string",
+                "value": "ActionMeshRenderer_2"
+              },
+
+              "_visible": {
+                "type": "bool",
+                "value": true
+              },
+              "_model": {
+                "type": "scope",
+                "value": {
+                  "class": "Model",
+
+                  "_name": {
+                    "type": "string",
+                    "value": "Model_2"
+                  },
+                  "_filePath": {
+                    "type": "string",
+                    "value": "Models\\Rocks\\Rock4B.fbx.bin"
+                  }
+
+                }
+              },
+              "_material": {
+                "type": "scope",
+                "value": {
+                  "class": "TextureMaterial",
+
+                  "_vertexShaderFilePath": {
+                    "type": "string",
+                    "value": "Shaders\\TexturedModelDemoVS.cso"
+                  },
+
+                  "_pixelShaderFilePath": {
+                    "type": "string",
+                    "value": "Shaders\\TexturedModelDemoPS.cso"
+                  },
+
+                  "_colorMap": {
+                    "type": "string",
+                    "value": "Textures\\Rocks\\Rock4.dds"
+                  }
+                }
+              }
+            }
+          ]
+        }
+      },
+
+      //Game Object 6
+
+      {
+        "class": "AvatarFoo",
+
+        "_name": {
+          "type": "string",
+          "value": "AvatarFoo_1"
+        },
+        "_position": {
+          "type": "vector",
+          "value": "vec4(5.000000, 0.000000, -15.000000, 0.000000)"
+        },
+        "_rotation": {
+          "type": "vector",
+          "value": "vec4(0.000000, 0.000000, 0.000000, 0.000000)"
+        },
+        "_scale": {
+          "type": "vector",
+          "value": "vec4(1.000000, 1.000000, 1.000000, 0.000000)"
+        },
+        "_actions": {
+          "type": "scope",
+          "value": [
+            {
+              "class": "ActionMeshRenderer",
+
+              "_name": {
+                "type": "string",
+                "value": "ActionMeshRenderer_2"
+              },
+
+              "_visible": {
+                "type": "bool",
+                "value": true
+              },
+              "_model": {
+                "type": "scope",
+                "value": {
+                  "class": "Model",
+
+                  "_name": {
+                    "type": "string",
+                    "value": "Model_2"
+                  },
+                  "_filePath": {
+                    "type": "string",
+                    "value": "Models\\Rocks\\Rock5A.fbx.bin"
+                  }
+
+                }
+              },
+              "_material": {
+                "type": "scope",
+                "value": {
+                  "class": "TextureMaterial",
+
+                  "_vertexShaderFilePath": {
+                    "type": "string",
+                    "value": "Shaders\\TexturedModelDemoVS.cso"
+                  },
+
+                  "_pixelShaderFilePath": {
+                    "type": "string",
+                    "value": "Shaders\\TexturedModelDemoPS.cso"
+                  },
+
+                  "_colorMap": {
+                    "type": "string",
+                    "value": "Textures\\Rocks\\Rock5.dds"
+                  }
+                }
+              }
+            }
+          ]
+        }
+      },
+
+      //Game Object 7
+
+      {
+        "class": "AvatarFoo",
+
+        "_name": {
+          "type": "string",
+          "value": "AvatarFoo_1"
+        },
+        "_position": {
+          "type": "vector",
+          "value": "vec4(-8.000000, 0.000000, -8.000000, 0.000000)"
+        },
+        "_rotation": {
+          "type": "vector",
+          "value": "vec4(0.000000, 0.000000, 0.000000, 0.000000)"
+        },
+        "_scale": {
+          "type": "vector",
+          "value": "vec4(1.000000, 1.000000, 1.000000, 0.000000)"
+        },
+        "_actions": {
+          "type": "scope",
+          "value": [
+            {
+              "class": "ActionMeshRenderer",
+
+              "_name": {
+                "type": "string",
+                "value": "ActionMeshRenderer_2"
+              },
+
+              "_visible": {
+                "type": "bool",
+                "value": true
+              },
+              "_model": {
+                "type": "scope",
+                "value": {
+                  "class": "Model",
+
+                  "_name": {
+                    "type": "string",
+                    "value": "Model_2"
+                  },
+                  "_filePath": {
+                    "type": "string",
+                    "value": "Models\\Rocks\\Rock6A.fbx.bin"
+                  }
+
+                }
+              },
+              "_material": {
+                "type": "scope",
+                "value": {
+                  "class": "TextureMaterial",
+
+                  "_vertexShaderFilePath": {
+                    "type": "string",
+                    "value": "Shaders\\TexturedModelDemoVS.cso"
+                  },
+
+                  "_pixelShaderFilePath": {
+                    "type": "string",
+                    "value": "Shaders\\TexturedModelDemoPS.cso"
+                  },
+
+                  "_colorMap": {
+                    "type": "string",
+                    "value": "Textures\\Rocks\\Rock6.dds"
+                  }
+                }
+              }
+            }
+          ]
+        }
+      },
+
+      //Game Object 8
+
+      {
+        "class": "AvatarFoo",
+
+        "_name": {
+          "type": "string",
+          "value": "AvatarFoo_1"
+        },
+        "_position": {
+          "type": "vector",
+          "value": "vec4(-15.000000, 0.000000, -15.000000, 0.000000)"
+        },
+        "_rotation": {
+          "type": "vector",
+          "value": "vec4(0.000000, 0.000000, 0.000000, 0.000000)"
+        },
+        "_scale": {
+          "type": "vector",
+          "value": "vec4(1.000000, 1.000000, 1.000000, 0.000000)"
+        },
+        "_actions": {
+          "type": "scope",
+          "value": [
+            {
+              "class": "ActionMeshRenderer",
+
+              "_name": {
+                "type": "string",
+                "value": "ActionMeshRenderer_2"
+              },
+
+              "_visible": {
+                "type": "bool",
+                "value": true
+              },
+              "_model": {
+                "type": "scope",
+                "value": {
+                  "class": "Model",
+
+                  "_name": {
+                    "type": "string",
+                    "value": "Model_2"
+                  },
+                  "_filePath": {
+                    "type": "string",
+                    "value": "Models\\Rocks\\Rock6C.fbx.bin"
+                  }
+
+                }
+              },
+              "_material": {
+                "type": "scope",
+                "value": {
+                  "class": "TextureMaterial",
+
+                  "_vertexShaderFilePath": {
+                    "type": "string",
+                    "value": "Shaders\\TexturedModelDemoVS.cso"
+                  },
+
+                  "_pixelShaderFilePath": {
+                    "type": "string",
+                    "value": "Shaders\\TexturedModelDemoPS.cso"
+                  },
+
+                  "_colorMap": {
+                    "type": "string",
+                    "value": "Textures\\Rocks\\Rock6.dds"
+                  }
+                }
+              }
+            }
+          ]
+        }
+      }
+
+
+    ]
+  }
+
+}

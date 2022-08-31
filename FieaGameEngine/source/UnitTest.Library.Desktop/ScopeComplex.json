@@ -1,0 +1,128 @@
+{
+
+  //Entering layer 1-1. ONLY DATUMS THAT ARE SCALARS ARE HERE
+  "Layer 1-1: A Scope: NOT Array": {
+    "type": "scope",
+    "value": {
+      "DatumIntegerScalar2_1": { //Scalar
+        "type": "integer",
+        "value": 100
+      },
+
+      "DatumFloatScalar2_1": { //Scalar
+        "type": "float",
+        "value": 1.1
+      },
+
+      "DatumStringScalar2_1": { //Scalar
+        "type": "string",
+        "value": "Alex"
+      },
+      //This is where we enter layer 2-1. ONLY DATUMS THAT ARE ARRAYS ARE HERE
+      "Layer 2-1: A Scope: Is Array": {
+        "type": "scope",
+        "value": [
+          {
+            "DatumIntegerArray3_1": { //Array
+              "type": "integer",
+              "value": [ 100, 200, 300 ]
+            }
+          },
+          {
+            "DatumFloatArray3_1": { //Array
+              "type": "float",
+              "value": [ 1.1, 2.2, 3.3 ]
+            }
+          },
+          {
+            "DatumStringArray3_1": { //Array
+              "type": "string",
+              "value": [ "Alex", "is", "cool!" ]
+            }
+          },
+          {
+            "Layer 3-1: A Scope:: Is Array": {
+              "type": "scope",
+              "value": [
+                {
+                  "DatumIntegerArray4_1": { //Array
+                    "type": "integer",
+                    "value": [ 100, 200, 300 ]
+                  }
+
+                },
+                {
+                  "DatumFloatArray4_1": { //Array
+                    "type": "float",
+                    "value": [ 1.1, 2.2, 3.3 ]
+                  }
+
+                },
+                {
+                  "DatumStringArray4_1": { //Array
+                    "type": "string",
+                    "value": [ "Alex", "is", "cool!" ]
+                  }
+                }
+
+              ]
+            }
+          }
+        ]
+      },
+      //This is where we enter layer 2-2. MIX OF SCALAR AND ARRAY
+      "Layer 2-2: A Scope: NOT Array": {
+        "type": "scope",
+        "value": {
+          "DatumIntegerScalar3_2_1": { //Scalar
+            "type": "integer",
+            "value": 100
+          },
+
+          "DatumFloatArray3_2_1": { //Scalar
+            "type": "float",
+            "value": 1.1
+          },
+
+          "DatumStringScalar3_2_1": { //Scalar
+            "type": "string",
+            "value": "Alex"
+          },
+
+          "DatumVectorScalar3_2_1": { //Scalar
+            "type": "vector",
+            "value": "vec4(1.000000, 2.000000, 3.000000, 4.000000)"
+          },
+
+          "DatumMatrixScalar3_2_1": { //Scalar
+            "type": "matrix",
+            "value": "mat4x4((1.000000,2.000000,3.000000,4.000000), (1.000000,2.000000,3.000000,4.000000), (1.000000,2.000000,3.000000,4.000000), (1.000000,2.000000,3.000000,4.000000))"
+          },
+
+          "DatumVectorArray3_2_1": { //Array
+            "type": "vector",
+            "value": [
+              "vec4(1.000000, 2.000000, 3.000000, 4.000000)",
+              "vec4(10.000000, 20.000000, 30.000000, 40.000000)",
+              "vec4(100.000000, 200.000000, 300.000000, 400.000000)"
+
+            ]
+          },
+
+          "DatumMatrixArray3_1": { //Array
+            "type": "matrix",
+            "value": [
+              "mat4x4((1.000000,2.000000,3.000000,4.000000), (1.000000,2.000000,3.000000,4.000000), (1.000000,2.000000,3.000000,4.000000), (1.000000,2.000000,3.000000,4.000000))",
+              "mat4x4((10.00000,20.00000,30.000000,40.000000), (10.000000,20.000000,30.000000,40.000000), (10.000000,20.000000,30.000000,40.000000), (10.000000,20.000000,30.000000,40.000000))",
+              "mat4x4((100.000000,200.000000,300.000000,400.000000), (100.000000,200.000000,300.000000,400.000000), (100.000000,200.000000,300.000000,400.000000), (100.000000,200.000000,300.000000,400.000000))"
+
+            ]
+          }
+
+        }
+
+
+      }
+    }
+  }
+}

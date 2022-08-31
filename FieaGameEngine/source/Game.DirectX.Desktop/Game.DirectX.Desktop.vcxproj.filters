@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="Program.cpp" />
+    <ClCompile Include="pch.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="pch.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="Content\Models\Sphere2.obj.bin" />
+    <None Include="Scene2.json" />
+    <None Include="Scene3.json" />
+    <None Include="Scene4.json" />
+    <None Include="Content\Models\Rocks\Rock1D.fbx.bin" />
+    <None Include="Content\Models\Rocks\Rock1E.fbx.bin" />
+    <None Include="Content\Models\Rocks\Rock2.fbx.bin" />
+    <None Include="Content\Models\Rocks\Rock3.fbx.bin" />
+    <None Include="Content\Models\Rocks\Rock4A.fbx.bin" />
+    <None Include="Content\Models\Rocks\Rock4B.fbx.bin" />
+    <None Include="Content\Models\Rocks\Rock5A.fbx.bin" />
+    <None Include="Content\Models\Rocks\Rock6A.fbx.bin" />
+    <None Include="Content\Models\Rocks\Rock6C.fbx.bin" />
+    <None Include="Content\Models\Swords\broadSword.fbx.bin" />
+    <None Include="Content\Models\Swords\katana.fbx.bin" />
+    <None Include="Content\Models\Swords\rapier.fbx.bin" />
+    <None Include="Content\Models\Swords\sabre.fbx.bin" />
+    <None Include="Content\Models\Swords\scimitar.fbx.bin" />
+    <None Include="Content\Models\Swords\ulfberht.fbx.bin" />
+    <None Include="Scene5.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <FxCompile Include="Content\Shaders\ModelDemoPS.hlsl" />
+    <FxCompile Include="Content\Shaders\ModelDemoVS.hlsl" />
+    <FxCompile Include="Content\Shaders\TexturedModelDemoPS.hlsl" />
+    <FxCompile Include="Content\Shaders\TexturedModelDemoVS.hlsl" />
+    <FxCompile Include="Content\Shaders\PointLightDemoPS.hlsl" />
+    <FxCompile Include="Content\Shaders\PointLightDemoVS.hlsl" />
+  </ItemGroup>
+  <ItemGroup>
+    <CopyFileToFolders Include="Scene.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Content\Textures\Planets\EarthComposite.dds" />
+    <Image Include="Content\Textures\Planets\EarthSpecularMap.png" />
+    <Image Include="Content\Textures\Planets\JupiterComposite.dds" />
+    <Image Include="Content\Textures\Planets\MarsComposite.dds" />
+    <Image Include="Content\Textures\Planets\MercuryComposite.dds" />
+    <Image Include="Content\Textures\Planets\MoonComposite.dds" />
+    <Image Include="Content\Textures\Planets\NeptuneComposite.dds" />
+    <Image Include="Content\Textures\Planets\SaturnComposite.dds" />
+    <Image Include="Content\Textures\Planets\SunComposite.dds" />
+    <Image Include="Content\Textures\Planets\UranusComposite.dds" />
+    <Image Include="Content\Textures\Planets\VenusComposite.dds" />
+    <Image Include="Content\Textures\Rocks\Rock1.dds" />
+    <Image Include="Content\Textures\Rocks\Rock2.dds" />
+    <Image Include="Content\Textures\Rocks\Rock3.dds" />
+    <Image Include="Content\Textures\Rocks\Rock4.dds" />
+    <Image Include="Content\Textures\Rocks\Rock5.dds" />
+    <Image Include="Content\Textures\Rocks\Rock6.dds" />
+    <Image Include="Content\Textures\Swords\broadSwordComposite.dds" />
+    <Image Include="Content\Textures\Swords\broadSwordSpecularMap.png" />
+    <Image Include="Content\Textures\Rocks\Rock2Specular.png" />
+  </ItemGroup>
+</Project>

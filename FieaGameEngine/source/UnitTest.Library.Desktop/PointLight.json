@@ -1,0 +1,35 @@
+{
+  "_name": {
+    "type": "string",
+    "value": "Test GameObject"
+  },
+  "_children": {
+    "type": "scope",
+    "value": [
+      {
+        "class": "PointLight",
+
+        "_name": {
+          "type": "string",
+          "value": "point_light_1"
+        },
+
+        "mColor": {
+          "type": "vector",
+          "value": "vec4(0.100000, 0.200000, 0.300000, 0.400000)"
+        },
+
+        "mPosition": {
+          "type": "float",
+          "value": [ 1.0, 2.0, 3.0 ]
+        },
+
+        "mRadius": {
+          "type": "float",
+          "value": 100.0
+        }
+
+      }
+    ]
+  }
+}

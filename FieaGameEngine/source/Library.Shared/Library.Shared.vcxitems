@@ -1,0 +1,265 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Label="Globals">
+    <MSBuildAllProjects Condition="'$(MSBuildVersion)' == '' Or '$(MSBuildVersion)' &lt; '16.0'">$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <ItemsProjectGuid>{7e2629cc-e475-44bd-a80d-31c65ce3a201}</ItemsProjectGuid>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);$(MSBuildThisFileDirectory)</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ProjectCapability Include="SourceItemsFromImports" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="$(MSBuildThisFileDirectory)Action.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)ActionCreateAction.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)ActionDestroyAction.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)ActionExpression.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)ActionIfAction.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)ActionIntegerIncrement.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)ActionList.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)ActionMeshRenderer.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)AnimationClip.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)AnimationPlayer.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Attributed.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)AvatarFoo.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)BasicMaterial.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)BlendStates.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Bone.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)BoneAnimation.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Camera.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)ColorHelper.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)ContentManager.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)ContentTypeReader.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)ContentTypeReaderManager.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Datum.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)DefaultHash.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)DirectionalLight.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)DirectXHelper.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)DrawableGameComponent.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Event.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)EventPublisher.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)EventQueue.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Factory.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)FirstPersonCamera.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)FpsComponent.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Game.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)GameClock.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)GameComponent.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)GameException.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)GameObject.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)GamePadComponent.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)GameState.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)GameTime.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Grid.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)IEventSubscriber.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)IJsonCoordinator.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)IJsonParseHelper.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)ImGuiComponent.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)imgui_impl_dx11.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)InputComponent.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)JsonScopeHelper.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)KeyboardComponent.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Keyframe.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Light.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)LightRegistry.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Material.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)MatrixHelper.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Mesh.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Model.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)ModelResource.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)ModelMaterial.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)ModelReader.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)MouseComponent.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)OrthographicCamera.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)PerspectiveCamera.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)PixelShader.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)PixelShaderReader.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Point.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)PointLight.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)PointLightMaterial.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)ProxyModel.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)RasterizerStates.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Rectangle.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)RendererDirectX.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)RenderStateHelper.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)RenderTarget.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)RTTI.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)SamplerStates.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)SceneNode.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Scope.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)ServiceContainer.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Shader.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Skybox.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)SkyboxMaterial.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)SpotLight.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Stack.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)StreamHelper.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)StringHelper.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Texture.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Texture2D.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Texture2DReader.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)TextureCube.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)TextureCubeReader.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)TextureHelper.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)TextureMaterial.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)TypeRegistry.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)UnorderedMap.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)pch.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)SList.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Utility.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Vector.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)VectorHelper.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Vertex.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)VertexDeclarations.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)VertexShader.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)VertexShaderReader.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="$(MSBuildThisFileDirectory)..\Library.Desktop\Game.inl" />
+    <None Include="$(MSBuildThisFileDirectory)Action.inl" />
+    <None Include="$(MSBuildThisFileDirectory)ActionCreateAction.inl" />
+    <None Include="$(MSBuildThisFileDirectory)ActionDestroyAction.inl" />
+    <None Include="$(MSBuildThisFileDirectory)ActionExpression.inl" />
+    <None Include="$(MSBuildThisFileDirectory)ActionIfAction.inl" />
+    <None Include="$(MSBuildThisFileDirectory)ActionIntegerIncrement.inl" />
+    <None Include="$(MSBuildThisFileDirectory)ActionList.inl" />
+    <None Include="$(MSBuildThisFileDirectory)ActionMeshRenderer.inl" />
+    <None Include="$(MSBuildThisFileDirectory)Attributed.inl" />
+    <None Include="$(MSBuildThisFileDirectory)BasicMaterial.inl" />
+    <None Include="$(MSBuildThisFileDirectory)ContentManager.inl" />
+    <None Include="$(MSBuildThisFileDirectory)ContentTypeReader.inl" />
+    <None Include="$(MSBuildThisFileDirectory)Datum.inl" />
+    <None Include="$(MSBuildThisFileDirectory)DefaultHash.inl" />
+    <None Include="$(MSBuildThisFileDirectory)Event.inl" />
+    <None Include="$(MSBuildThisFileDirectory)EventQueue.inl" />
+    <None Include="$(MSBuildThisFileDirectory)Factory.inl" />
+    <None Include="$(MSBuildThisFileDirectory)GameObject.inl" />
+    <None Include="$(MSBuildThisFileDirectory)GameState.inl" />
+    <None Include="$(MSBuildThisFileDirectory)IJsonCoordinator.inl" />
+    <None Include="$(MSBuildThisFileDirectory)Light.inl" />
+    <None Include="$(MSBuildThisFileDirectory)Material.inl" />
+    <None Include="$(MSBuildThisFileDirectory)Model.inl" />
+    <None Include="$(MSBuildThisFileDirectory)packages.config" />
+    <None Include="$(MSBuildThisFileDirectory)Point.inl" />
+    <None Include="$(MSBuildThisFileDirectory)Rectangle.inl" />
+    <None Include="$(MSBuildThisFileDirectory)RendererDirectX.inl" />
+    <None Include="$(MSBuildThisFileDirectory)Scope.inl" />
+    <None Include="$(MSBuildThisFileDirectory)Stack.inl" />
+    <None Include="$(MSBuildThisFileDirectory)Texture.inl" />
+    <None Include="$(MSBuildThisFileDirectory)TypeRegistry.inl" />
+    <None Include="$(MSBuildThisFileDirectory)UnorderedMap.inl" />
+    <None Include="$(MSBuildThisFileDirectory)SList.inl" />
+    <None Include="$(MSBuildThisFileDirectory)Vector.inl" />
+    <None Include="$(MSBuildThisFileDirectory)VectorHelper.inl" />
+    <None Include="$(MSBuildThisFileDirectory)VertexDeclarations.inl" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Action.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)ActionCreateAction.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)ActionDestroyAction.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)ActionExpression.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)ActionIfAction.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)ActionIntegerIncrement.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)ActionList.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)ActionMeshRenderer.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)AnimationClip.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)AnimationPlayer.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Attributed.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)AvatarFoo.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)BasicMaterial.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)BlendStates.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Bone.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)BoneAnimation.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Camera.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)ColorHelper.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)ContentManager.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)ContentTypeReader.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)ContentTypeReaderManager.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Datum.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)DefaultHash.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)DirectionalLight.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)DirectXHelper.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)DrawableGameComponent.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)EventPublisher.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)EventQueue.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)FirstPersonCamera.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)FpsComponent.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Game.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)GameClock.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)GameComponent.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)GameException.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)GameObject.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)GamePadComponent.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)GameState.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)GameTime.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Grid.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)IJsonCoordinator.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)IJsonParseHelper.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)ImGuiComponent.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)imgui_impl_dx11.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)InputComponent.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)JsonScopeHelper.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)KeyboardComponent.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Keyframe.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Light.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)LightRegistry.inl" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Material.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)MatrixHelper.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Mesh.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Model.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)ModelResource.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)ModelMaterial.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)ModelReader.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)MouseComponent.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)OrthographicCamera.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)pch.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)PerspectiveCamera.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)PixelShader.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)PixelShaderReader.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Point.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)PointLight.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)PointLightMaterial.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)ProxyModel.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)RasterizerStates.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Rectangle.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)RendererDirectX.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)RenderStateHelper.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)RenderTarget.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)SamplerStates.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)SceneNode.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Scope.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)ServiceContainer.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Shader.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Skybox.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)SkyboxMaterial.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)SpotLight.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)StreamHelper.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)StringHelper.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Texture.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Texture2D.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Texture2DReader.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)TextureCube.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)TextureCubeReader.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)TextureHelper.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)TextureMaterial.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Utility.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)VectorHelper.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)VertexDeclarations.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)VertexShader.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)VertexShaderReader.cpp" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,67 @@
+{
+
+  "NestedScopeLevel1": {
+    "type": "scope",
+    "value": {
+
+      "DatumIntegerScalar": {
+        "type": "integer",
+        "value": 100
+      },
+
+      "DatumFloatScalar": {
+        "type": "float",
+        "value": 1.1
+      },
+
+      "DatumStringScalar": {
+        "type": "string",
+        "value": "Alex"
+      },
+
+      "NestedScopeLevel2": {
+        "type": "scope",
+        "value": {
+
+          "DatumIntegerScalar": {
+            "type": "integer",
+            "value": 200
+          },
+
+          "DatumFloatScalar": {
+            "type": "float",
+            "value": 2.2
+          },
+
+          "DatumStringScalar": {
+            "type": "string",
+            "value": "Soto"
+          },
+
+          "NestedScopeLevel3": {
+            "type": "scope",
+            "value": {
+
+              "DatumIntegerArray": {
+                "type": "integer",
+                "value": [ 100, 200, 300 ]
+              },
+
+              "DatumFloatArray": {
+                "type": "float",
+                "value": [ 1.1, 2.2, 3.3 ]
+              },
+
+              "DatumStringArray": {
+                "type": "string",
+                "value": [ "Alex", "is", "cool!" ]
+              }
+
+            }
+          }
+
+        }
+      }
+    }
+  }
+}

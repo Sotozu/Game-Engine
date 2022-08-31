@@ -1,0 +1,31 @@
+{
+  "A-IntegerScalar": {
+    "type": "integer",
+    "value": 100
+  },
+
+  "B-FloatScalar": {
+    "type": "float",
+    "value": 1.1
+  },
+
+  "C-StringScalar": {
+    "type": "string",
+    "value": "Alex"
+  },
+
+  "D-IntegerArray": {
+    "type": "integer",
+    "value": [ 0, 10, 200, 3000, 40000 ]
+  },
+
+  "E-FloatArray": {
+    "type": "float",
+    "value": [ 1.1, 2.2, 3.3, 4.4, 5.5 ]
+  },
+
+  "F-StringArray": {
+    "type": "string",
+    "value": [ "ABC", "DEF", "GHI", "JKL", "MNO" ]
+  }
+}

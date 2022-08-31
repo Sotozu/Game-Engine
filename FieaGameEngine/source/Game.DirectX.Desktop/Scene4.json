@@ -1,0 +1,658 @@
+
+
+{
+  "_name": {
+    "type": "string",
+    "value": "Root GameObject"
+  },
+  "_position": {
+    "type": "vector",
+    "value": "vec4(0.000000, 0.000000, 0.000000, 0.000000)"
+
+  },
+  "_rotation": {
+    "type": "vector",
+    "value": "vec4(0.000000, 0.000000, 0.000000, 0.000000)"
+
+  },
+  "_scale": {
+    "type": "vector",
+    "value": "vec4(0.000000, 0.000000, 0.000000, 0.000000)"
+
+  },
+
+  "_children": {
+    "type": "scope",
+    "value": [
+
+      //Game Object 1
+
+      {
+        "class": "AvatarFoo",
+
+        "_name": {
+          "type": "string",
+          "value": "AvatarFoo_1"
+        },
+        "_position": {
+          "type": "vector",
+          "value": "vec4(-40.000000, 0.000000, -10.000000, 0.000000)"
+        },
+        "_rotation": {
+          "type": "vector",
+          "value": "vec4(0.000000, 0.000000, 0.000000, 0.000000)"
+        },
+        "_scale": {
+          "type": "vector",
+          "value": "vec4(1.000000, 1.000000, 1.000000, 0.000000)"
+        },
+        "_actions": {
+          "type": "scope",
+          "value": [
+            {
+              "class": "ActionMeshRenderer",
+
+              "_name": {
+                "type": "string",
+                "value": "ActionMeshRenderer_2"
+              },
+
+              "_visible": {
+                "type": "bool",
+                "value": true
+              },
+              "_model": {
+                "type": "scope",
+                "value": {
+                  "class": "Model",
+
+                  "_name": {
+                    "type": "string",
+                    "value": "Model_2"
+                  },
+                  "_filePath": {
+                    "type": "string",
+                    "value": "Models\\Swords\\broadSword.fbx.bin"
+                  }
+
+                }
+              },
+              "_material": {
+                "type": "scope",
+                "value": {
+                  "class": "TextureMaterial",
+
+                  "_vertexShaderFilePath": {
+                    "type": "string",
+                    "value": "Shaders\\TexturedModelDemoVS.cso"
+                  },
+
+                  "_pixelShaderFilePath": {
+                    "type": "string",
+                    "value": "Shaders\\TexturedModelDemoPS.cso"
+                  },
+
+                  "_colorMap": {
+                    "type": "string",
+                    "value": "Textures\\Planets\\EarthComposite.dds"
+                  }
+                }
+              }
+            }
+          ]
+        }
+      }
+      
+      ,
+
+      //Game Object 2
+
+      {
+        "class": "AvatarFoo",
+
+        "_name": {
+          "type": "string",
+          "value": "AvatarFoo_1"
+        },
+        "_position": {
+          "type": "vector",
+          "value": "vec4(-30.000000, 0.000000, 10.000000, 0.000000)"
+        },
+        "_rotation": {
+          "type": "vector",
+          "value": "vec4(0.000000, 0.000000, 0.000000, 0.000000)"
+        },
+        "_scale": {
+          "type": "vector",
+          "value": "vec4(1.000000, 1.000000, 1.000000, 0.000000)"
+        },
+        "_actions": {
+          "type": "scope",
+          "value": [
+            {
+              "class": "ActionMeshRenderer",
+
+              "_name": {
+                "type": "string",
+                "value": "ActionMeshRenderer_2"
+              },
+
+              "_visible": {
+                "type": "bool",
+                "value": true
+              },
+              "_model": {
+                "type": "scope",
+                "value": {
+                  "class": "Model",
+
+                  "_name": {
+                    "type": "string",
+                    "value": "Model_2"
+                  },
+                  "_filePath": {
+                    "type": "string",
+                    "value": "Models\\Swords\\broadSword.fbx.bin"
+                  }
+
+                }
+              },
+              "_material": {
+                "type": "scope",
+                "value": {
+                  "class": "TextureMaterial",
+
+                  "_vertexShaderFilePath": {
+                    "type": "string",
+                    "value": "Shaders\\TexturedModelDemoVS.cso"
+                  },
+
+                  "_pixelShaderFilePath": {
+                    "type": "string",
+                    "value": "Shaders\\TexturedModelDemoPS.cso"
+                  },
+
+                  "_colorMap": {
+                    "type": "string",
+                    "value": "Textures\\Planets\\UranusComposite.dds"
+                  }
+                }
+              }
+            }
+          ]
+        }
+      },
+
+      //Game Object 3
+
+      {
+        "class": "AvatarFoo",
+
+        "_name": {
+          "type": "string",
+          "value": "AvatarFoo_1"
+        },
+        "_position": {
+          "type": "vector",
+          "value": "vec4(-20.000000, 0.000000, -10.000000, 0.000000)"
+        },
+        "_rotation": {
+          "type": "vector",
+          "value": "vec4(0.000000, 0.000000, 0.000000, 0.000000)"
+        },
+        "_scale": {
+          "type": "vector",
+          "value": "vec4(1.000000, 1.000000, 1.000000, 0.000000)"
+        },
+        "_actions": {
+          "type": "scope",
+          "value": [
+            {
+              "class": "ActionMeshRenderer",
+
+              "_name": {
+                "type": "string",
+                "value": "ActionMeshRenderer_2"
+              },
+
+              "_visible": {
+                "type": "bool",
+                "value": true
+              },
+              "_model": {
+                "type": "scope",
+                "value": {
+                  "class": "Model",
+
+                  "_name": {
+                    "type": "string",
+                    "value": "Model_2"
+                  },
+                  "_filePath": {
+                    "type": "string",
+                    "value": "Models\\Swords\\broadSword.fbx.bin"
+                  }
+
+                }
+              },
+              "_material": {
+                "type": "scope",
+                "value": {
+                  "class": "TextureMaterial",
+
+                  "_vertexShaderFilePath": {
+                    "type": "string",
+                    "value": "Shaders\\TexturedModelDemoVS.cso"
+                  },
+
+                  "_pixelShaderFilePath": {
+                    "type": "string",
+                    "value": "Shaders\\TexturedModelDemoPS.cso"
+                  },
+
+                  "_colorMap": {
+                    "type": "string",
+                    "value": "Textures\\Planets\\UranusComposite.dds"
+                  }
+                }
+              }
+            }
+          ]
+        }
+      },
+
+      //Game Object 4
+
+      {
+        "class": "AvatarFoo",
+
+        "_name": {
+          "type": "string",
+          "value": "AvatarFoo_1"
+        },
+        "_position": {
+          "type": "vector",
+          "value": "vec4(-10.000000, 0.000000, 10.000000, 0.000000)"
+        },
+        "_rotation": {
+          "type": "vector",
+          "value": "vec4(0.000000, 0.000000, 0.000000, 0.000000)"
+        },
+        "_scale": {
+          "type": "vector",
+          "value": "vec4(1.000000, 1.000000, 1.000000, 0.000000)"
+        },
+        "_actions": {
+          "type": "scope",
+          "value": [
+            {
+              "class": "ActionMeshRenderer",
+
+              "_name": {
+                "type": "string",
+                "value": "ActionMeshRenderer_2"
+              },
+
+              "_visible": {
+                "type": "bool",
+                "value": true
+              },
+              "_model": {
+                "type": "scope",
+                "value": {
+                  "class": "Model",
+
+                  "_name": {
+                    "type": "string",
+                    "value": "Model_2"
+                  },
+                  "_filePath": {
+                    "type": "string",
+                    "value": "Models\\Swords\\broadSword.fbx.bin"
+                  }
+
+                }
+              },
+              "_material": {
+                "type": "scope",
+                "value": {
+                  "class": "TextureMaterial",
+
+                  "_vertexShaderFilePath": {
+                    "type": "string",
+                    "value": "Shaders\\TexturedModelDemoVS.cso"
+                  },
+
+                  "_pixelShaderFilePath": {
+                    "type": "string",
+                    "value": "Shaders\\TexturedModelDemoPS.cso"
+                  },
+
+                  "_colorMap": {
+                    "type": "string",
+                    "value": "Textures\\Planets\\UranusComposite.dds"
+                  }
+                }
+              }
+            }
+          ]
+        }
+      },
+
+      //Game Object 5
+
+      {
+        "class": "AvatarFoo",
+
+        "_name": {
+          "type": "string",
+          "value": "AvatarFoo_1"
+        },
+        "_position": {
+          "type": "vector",
+          "value": "vec4(10.000000, 0.000000, -10.000000, 40.000000)"
+        },
+        "_rotation": {
+          "type": "vector",
+          "value": "vec4(0.000000, 0.000000, 0.000000, 0.000000)"
+        },
+        "_scale": {
+          "type": "vector",
+          "value": "vec4(1.000000, 1.000000, 1.000000, 0.000000)"
+        },
+        "_actions": {
+          "type": "scope",
+          "value": [
+            {
+              "class": "ActionMeshRenderer",
+
+              "_name": {
+                "type": "string",
+                "value": "ActionMeshRenderer_2"
+              },
+
+              "_visible": {
+                "type": "bool",
+                "value": true
+              },
+              "_model": {
+                "type": "scope",
+                "value": {
+                  "class": "Model",
+
+                  "_name": {
+                    "type": "string",
+                    "value": "Model_2"
+                  },
+                  "_filePath": {
+                    "type": "string",
+                    "value": "Models\\Swords\\broadSword.fbx.bin"
+                  }
+
+                }
+              },
+              "_material": {
+                "type": "scope",
+                "value": {
+                  "class": "TextureMaterial",
+
+                  "_vertexShaderFilePath": {
+                    "type": "string",
+                    "value": "Shaders\\TexturedModelDemoVS.cso"
+                  },
+
+                  "_pixelShaderFilePath": {
+                    "type": "string",
+                    "value": "Shaders\\TexturedModelDemoPS.cso"
+                  },
+
+                  "_colorMap": {
+                    "type": "string",
+                    "value": "Textures\\Planets\\UranusComposite.dds"
+                  }
+                }
+              }
+            }
+          ]
+        }
+      },
+
+      //Game Object 6
+
+      {
+        "class": "AvatarFoo",
+
+        "_name": {
+          "type": "string",
+          "value": "AvatarFoo_1"
+        },
+        "_position": {
+          "type": "vector",
+          "value": "vec4(20.000000, 00.000000, 10.000000, 0.000000)"
+        },
+        "_rotation": {
+          "type": "vector",
+          "value": "vec4(0.000000, 0.000000, 0.000000, 0.000000)"
+        },
+        "_scale": {
+          "type": "vector",
+          "value": "vec4(1.000000, 1.000000, 1.000000, 0.000000)"
+        },
+        "_actions": {
+          "type": "scope",
+          "value": [
+            {
+              "class": "ActionMeshRenderer",
+
+              "_name": {
+                "type": "string",
+                "value": "ActionMeshRenderer_2"
+              },
+
+              "_visible": {
+                "type": "bool",
+                "value": true
+              },
+              "_model": {
+                "type": "scope",
+                "value": {
+                  "class": "Model",
+
+                  "_name": {
+                    "type": "string",
+                    "value": "Model_2"
+                  },
+                  "_filePath": {
+                    "type": "string",
+                    "value": "Models\\Swords\\broadSword.fbx.bin"
+                  }
+
+                }
+              },
+              "_material": {
+                "type": "scope",
+                "value": {
+                  "class": "TextureMaterial",
+
+                  "_vertexShaderFilePath": {
+                    "type": "string",
+                    "value": "Shaders\\TexturedModelDemoVS.cso"
+                  },
+
+                  "_pixelShaderFilePath": {
+                    "type": "string",
+                    "value": "Shaders\\TexturedModelDemoPS.cso"
+                  },
+
+                  "_colorMap": {
+                    "type": "string",
+                    "value": "Textures\\Planets\\UranusComposite.dds"
+                  }
+                }
+              }
+            }
+          ]
+        }
+      },
+
+      //Game Object 7
+
+      {
+        "class": "AvatarFoo",
+
+        "_name": {
+          "type": "string",
+          "value": "AvatarFoo_1"
+        },
+        "_position": {
+          "type": "vector",
+          "value": "vec4(30.000000, 0.000000, -10.000000, 0.000000)"
+        },
+        "_rotation": {
+          "type": "vector",
+          "value": "vec4(0.000000, 0.000000, 0.000000, 0.000000)"
+        },
+        "_scale": {
+          "type": "vector",
+          "value": "vec4(1.000000, 1.000000, 1.000000, 0.000000)"
+        },
+        "_actions": {
+          "type": "scope",
+          "value": [
+            {
+              "class": "ActionMeshRenderer",
+
+              "_name": {
+                "type": "string",
+                "value": "ActionMeshRenderer_2"
+              },
+
+              "_visible": {
+                "type": "bool",
+                "value": true
+              },
+              "_model": {
+                "type": "scope",
+                "value": {
+                  "class": "Model",
+
+                  "_name": {
+                    "type": "string",
+                    "value": "Model_2"
+                  },
+                  "_filePath": {
+                    "type": "string",
+                    "value": "Models\\Swords\\broadSword.fbx.bin"
+                  }
+
+                }
+              },
+              "_material": {
+                "type": "scope",
+                "value": {
+                  "class": "TextureMaterial",
+
+                  "_vertexShaderFilePath": {
+                    "type": "string",
+                    "value": "Shaders\\TexturedModelDemoVS.cso"
+                  },
+
+                  "_pixelShaderFilePath": {
+                    "type": "string",
+                    "value": "Shaders\\TexturedModelDemoPS.cso"
+                  },
+
+                  "_colorMap": {
+                    "type": "string",
+                    "value": "Textures\\Planets\\UranusComposite.dds"
+                  }
+                }
+              }
+            }
+          ]
+        }
+      },
+
+      //Game Object 8
+
+      {
+        "class": "AvatarFoo",
+
+        "_name": {
+          "type": "string",
+          "value": "AvatarFoo_1"
+        },
+        "_position": {
+          "type": "vector",
+          "value": "vec4(40.000000, 0.000000, 10.000000, 0.000000)"
+        },
+        "_rotation": {
+          "type": "vector",
+          "value": "vec4(0.000000, 0.000000, 0.000000, 0.000000)"
+        },
+        "_scale": {
+          "type": "vector",
+          "value": "vec4(1.000000, 1.000000, 1.000000, 0.000000)"
+        },
+        "_actions": {
+          "type": "scope",
+          "value": [
+            {
+              "class": "ActionMeshRenderer",
+
+              "_name": {
+                "type": "string",
+                "value": "ActionMeshRenderer_2"
+              },
+
+              "_visible": {
+                "type": "bool",
+                "value": true
+              },
+              "_model": {
+                "type": "scope",
+                "value": {
+                  "class": "Model",
+
+                  "_name": {
+                    "type": "string",
+                    "value": "Model_2"
+                  },
+                  "_filePath": {
+                    "type": "string",
+                    "value": "Models\\Swords\\broadSword.fbx.bin"
+                  }
+
+                }
+              },
+              "_material": {
+                "type": "scope",
+                "value": {
+                  "class": "TextureMaterial",
+
+                  "_vertexShaderFilePath": {
+                    "type": "string",
+                    "value": "Shaders\\TexturedModelDemoVS.cso"
+                  },
+
+                  "_pixelShaderFilePath": {
+                    "type": "string",
+                    "value": "Shaders\\TexturedModelDemoPS.cso"
+                  },
+
+                  "_colorMap": {
+                    "type": "string",
+                    "value": "Textures\\Planets\\UranusComposite.dds"
+                  }
+                }
+              }
+            }
+          ]
+        }
+      }
+
+
+    ]
+  }
+
+}

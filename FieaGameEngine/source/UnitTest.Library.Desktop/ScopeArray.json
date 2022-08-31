@@ -1,0 +1,36 @@
+{
+
+	"MyAttributedFoo": {
+		"type": "scope",
+		"value": {
+
+			"class": "AttributedFoo",
+
+			"ScopeArray": {
+
+				"type": "scope",
+
+				"value": [
+
+					{
+						"DatumIntegerScalar": {
+							"type": "integer",
+							"value": 100
+						}
+
+					},
+
+					{
+						"DatumFloatScalar": {
+							"type": "float",
+							"value": 1.1
+						}
+
+					}
+
+				]
+			}
+		}
+	}
+}
+
