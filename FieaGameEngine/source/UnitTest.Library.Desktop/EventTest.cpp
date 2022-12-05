@@ -245,6 +245,11 @@ namespace UnitTestLibraryDesktop
 		TEST_METHOD(SubscriberAddsEventWhenNotified)
 		{
 			GameState gState;
+
+			//The design is that subscriber will subscribe itself to the following event type Event<GameStateSubscriber>.
+			//The "Event<GameStateSubscriber>" sends a message when it's state changes.
+			//This message is the "payload" and it contains a reference to the "GameState"
+			//When this class receives this message it gets the GameState and then clears the EventQueue from the GameState.
 			EventClearQueSubscriber eQSub; //When notified it will clear the queue
 
 			Foo foo;
@@ -257,8 +262,10 @@ namespace UnitTestLibraryDesktop
 			Event<Foo> e5(foo); //Our event now contains a message
 
 			Event<GameStateSubscriber>::Subscribe(eQSub);
-			GameStateSubscriber eEnqFoo(gState);
-			Event<GameStateSubscriber> e(eEnqFoo);
+
+			GameStateSubscriber eEnqFoo(gState); //Sets the payload
+
+			Event<GameStateSubscriber> e(eEnqFoo);// Our event now contains the message (payload/GameState reference)
 			
 			gState.GetGameTime().SetCurrentTime(std::chrono::high_resolution_clock::time_point(0s));
 

@@ -26,13 +26,14 @@ namespace FieaGameEngine
 
 	void Skybox::Initialize()
 	{
-		const auto model = mGame->Content().Load<ModelResource>(L"Models\\Sphere.obj.bin");
+		auto& content = mGame->GetContentManager();
+		const auto model = content.Load<ModelResource>(L"Models\\Sphere.obj.bin");
 		Mesh* mesh = model->Meshes().at(0).get();
 		VertexPosition::CreateVertexBuffer(mGame->Direct3DDevice(), *mesh, not_null<ID3D11Buffer**>(mVertexBuffer.put()));
 		mesh->CreateIndexBuffer(mGame->Direct3DDevice(), not_null<ID3D11Buffer**>(mIndexBuffer.put()));
 		mIndexCount = narrow<uint32_t>(mesh->Indices().size());
 
-		auto textureCube = mGame->Content().Load<TextureCube>(mCubeMapFileName);
+		auto textureCube = content.Load<TextureCube>(mCubeMapFileName);
 		mMaterial = make_shared<SkyboxMaterial>(*mGame, textureCube);
 		mMaterial->Initialize();
 

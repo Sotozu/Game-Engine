@@ -43,7 +43,7 @@ namespace FieaGameEngine
 		return mGetWindow;
 	}
 
-	inline ContentManager& Game::Content()
+	inline ContentManager& Game::GetContentManager()
 	{
 		return mContentManager;
 	}

@@ -58,7 +58,7 @@ namespace FieaGameEngine
 		assert(_vertexShaderFilePath != "");
 		assert(_pixelShaderFilePath != "");
 
-		auto& content = mGame->Content();
+		auto& content = mGame->GetContentManager();
 		auto vertexShader = content.Load<VertexShader>(Utility::ToWideString(_vertexShaderFilePath));
 		SetShader(vertexShader);
 
@@ -69,7 +69,7 @@ namespace FieaGameEngine
 		vertexShader->CreateInputLayout<VertexPositionTexture>(direct3DDevice);
 		SetInputLayout(vertexShader->InputLayout());
 
-		auto colorMap = mGame->Content().Load<Texture2D>(Utility::ToWideString(_colorMap));
+		auto colorMap = content.Load<Texture2D>(Utility::ToWideString(_colorMap));
 		mColorMap = std::move(colorMap);
 
 		D3D11_BUFFER_DESC constantBufferDesc{ 0 };

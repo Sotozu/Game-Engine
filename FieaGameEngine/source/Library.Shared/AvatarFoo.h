@@ -73,7 +73,7 @@ namespace FieaGameEngine
 		bool _isTakingDamage;
 	protected:
 		AvatarFoo(std::size_t typeId);
-
+		bool _modelSwitch{ false };
 	};
 	ConcreteFactory(AvatarFoo, Scope);
 }

@@ -43,7 +43,7 @@ namespace UnitTestLibraryDesktop
 #endif
 		}
 #pragma region GameObject Tests
-		TEST_METHOD(GameObjectConstructor)
+		TEST_METHOD(GameObjectConstructor_Default)
 		{
 			GameObject myGameObject;
 			glm::vec4 defaultVector{ 0.0f, 0.0f, 0.0f, 0.0f };
@@ -53,7 +53,7 @@ namespace UnitTestLibraryDesktop
 			Assert::AreEqual(defaultVector, myGameObject.GetTransform()._rotation);
 			Assert::AreEqual(defaultVector, myGameObject.GetTransform()._scale);
 		}
-		TEST_METHOD(GameObjectConstructor_nameGetTransform())
+		TEST_METHOD(GameObjectConstructor)
 		{
 			glm::vec4 position(100.0f, 200.0f, 300.0f, 400.0f);
 			glm::vec4 rotation(100.0f, 200.0f, 300.0f, 400.0f);

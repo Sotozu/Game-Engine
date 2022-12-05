@@ -60,9 +60,6 @@ namespace FieaGameEngine
 		return _name == action->_name;
 	}
 
-
-
-
 	const Vector<Signature> ActionMeshRenderer::Signatures()
 	{
 		return Vector<Signature>
@@ -85,7 +82,7 @@ namespace FieaGameEngine
 			_camera = (Camera*)_game->Services().GetService(Camera::TypeIdClass());
 
 			auto direct3DDevice = _game->Direct3DDevice();
-			//auto& content = _game->Content();
+			//auto& content = _game->GetContentManager();
 
 
 			if (_model == nullptr)
@@ -104,11 +101,11 @@ namespace FieaGameEngine
 				_material->Initialize();
 			}
 
-			_staticMesh = _model->Meshes().at(0).get();
+			auto staticMesh = _model->Meshes().at(0).get();
 
-			_material->CreateVertexBuffer(direct3DDevice, *_staticMesh, _vertexBuffer.put());
-			_staticMesh->CreateIndexBuffer(*direct3DDevice, not_null<ID3D11Buffer**>(_indexBuffer.put()));
-			_indexCount = narrow<uint32_t>(_staticMesh->Indices().size());
+			_material->CreateVertexBuffer(direct3DDevice, *staticMesh, _vertexBuffer.put());
+			staticMesh->CreateIndexBuffer(*direct3DDevice, not_null<ID3D11Buffer**>(_indexBuffer.put()));
+			_indexCount = narrow<uint32_t>(staticMesh->Indices().size());
 
 #pragma region NEW 7/31/2022
 
@@ -137,6 +134,32 @@ namespace FieaGameEngine
 		_parentTransform = &GetParent()->As<GameObject>()->GetTransform();
 		
 	}
+
+	void ActionMeshRenderer::ChangeModel(const std::shared_ptr<ModelResource> m)
+	{
+		if (_model != nullptr) { delete _model; }
+		_model = new Model(m);
+		Adopt("ActionMeshRenderer", *_model);
+		_model->GameObject::Initialize();
+		auto direct3DDevice = _game->Direct3DDevice();
+		auto staticMesh = _model->Meshes().at(0).get();
+		_material->CreateVertexBuffer(direct3DDevice, *staticMesh, _vertexBuffer.put());
+		staticMesh->CreateIndexBuffer(*direct3DDevice, not_null<ID3D11Buffer**>(_indexBuffer.put()));
+		_indexCount = narrow<uint32_t>(staticMesh->Indices().size());
+	}
+
+	//void ActionMeshRenderer::ChangeModel(const std::string& filePath)
+	//{
+	//	if (_model != nullptr) { delete _model; }
+	//	_model = new Model();
+	//	_model->_
+	//	Adopt("ActionMeshRenderer", *_model);
+	//	//_model->Initialize();
+	//	auto direct3DDevice = _game->Direct3DDevice();
+	//	auto staticMesh = _model->Meshes().at(0).get();
+	//	staticMesh->CreateIndexBuffer(*direct3DDevice, not_null<ID3D11Buffer**>(_indexBuffer.put()));
+
+	//}
 
 	bool ActionMeshRenderer::Visible() const
 	{
@@ -210,13 +233,14 @@ namespace FieaGameEngine
 
 	void ActionMeshRenderer::CreateIndexBuffer(gsl::not_null<ID3D11Device*> device, gsl::not_null<ID3D11Buffer**> indexBuffer)
 	{
+		auto staticMesh = _model->Meshes().at(0).get();
 		D3D11_BUFFER_DESC indexBufferDesc{ 0 };
-		indexBufferDesc.ByteWidth = narrow_cast<uint32_t>(sizeof(uint32_t) * _staticMesh->Indices().size());
+		indexBufferDesc.ByteWidth = narrow_cast<uint32_t>(sizeof(uint32_t) * staticMesh->Indices().size());
 		indexBufferDesc.Usage = D3D11_USAGE_IMMUTABLE;
 		indexBufferDesc.BindFlags = D3D11_BIND_INDEX_BUFFER;
 
 		D3D11_SUBRESOURCE_DATA indexSubResourceData{ 0 };
-		indexSubResourceData.pSysMem = &_staticMesh->Indices()[0];
+		indexSubResourceData.pSysMem = &staticMesh->Indices()[0];
 
 		ThrowIfFailed(device->CreateBuffer(&indexBufferDesc, &indexSubResourceData, indexBuffer), "ID3D11Device::CreateBuffer() failed.");
 
@@ -238,6 +262,9 @@ namespace FieaGameEngine
 		//given the input layout description in the VertexShader.
 		std::vector<std::function<void(char* bufferStart, int& bufferOffset, size_t vertexIndex)>> setVertexBufferElements;
 
+		auto staticMesh = _model->Meshes().at(0).get();
+
+
 		//iterate through each D3D11_INPUT_ELEMENT_DESC and sum up the total sizes.
 		//Also create a function that will be used to place data into the buffer.
 		for (const auto& descriptionStruct : inputLayoutDescription)
@@ -247,7 +274,7 @@ namespace FieaGameEngine
 
 			if (descriptionStruct.SemanticName == "POSITION"s)
 			{
-				const vector<XMFLOAT3>& sourceVertices = _staticMesh->Vertices();
+				const vector<XMFLOAT3>& sourceVertices = staticMesh->Vertices();
 
 				//Create method to fill buffer with an element of position vertex data from mesh.
 				setVertexBufferElements.push_back([this, sourceVertices](char* bufferStart, int& bufferOffset, size_t vertexIndex)
@@ -262,8 +289,8 @@ namespace FieaGameEngine
 
 			else if (descriptionStruct.SemanticName == "TEXCOORD"s)
 			{
-				const vector<XMFLOAT3>& textureCoordinates = _staticMesh->TextureCoordinates().at(semanticIndex);
-				assert(textureCoordinates.size() == _staticMesh->Vertices().size());
+				const vector<XMFLOAT3>& textureCoordinates = staticMesh->TextureCoordinates().at(semanticIndex);
+				assert(textureCoordinates.size() == staticMesh->Vertices().size());
 
 				//Method to fill buffer with an element of texture-coordinate vertex data from mesh.
 				setVertexBufferElements.push_back([this, textureCoordinates](char* bufferStart, int& bufferOffset, size_t vertexIndex)
@@ -278,8 +305,8 @@ namespace FieaGameEngine
 
 			else if (descriptionStruct.SemanticName == "COLOR"s)
 			{
-				const vector<XMFLOAT4>& vertexColors = _staticMesh->VertexColors().at(semanticIndex);
-				assert(vertexColors.size() == _staticMesh->Vertices().size());
+				const vector<XMFLOAT4>& vertexColors = staticMesh->VertexColors().at(semanticIndex);
+				assert(vertexColors.size() == staticMesh->Vertices().size());
 
 				//Method to fill buffer with an element of texture-coordinate vertex data from mesh.
 				setVertexBufferElements.push_back([this, vertexColors](char* bufferStart, int& bufferOffset, size_t vertexIndex)
@@ -294,8 +321,8 @@ namespace FieaGameEngine
 
 			else if (descriptionStruct.SemanticName == "NORMAL"s)
 			{
-				const vector<XMFLOAT3>& sourceNormals = _staticMesh->Normals();
-				assert(sourceNormals.size() == _staticMesh->Vertices().size());
+				const vector<XMFLOAT3>& sourceNormals = staticMesh->Normals();
+				assert(sourceNormals.size() == staticMesh->Vertices().size());
 
 				//Method to fill buffer with an element of texture-coordinate vertex data from mesh.
 				setVertexBufferElements.push_back([this, sourceNormals](char* bufferStart, int& bufferOffset, size_t vertexIndex)
@@ -310,8 +337,8 @@ namespace FieaGameEngine
 
 			else if (descriptionStruct.SemanticName == "TANGENT"s)
 			{
-				const vector<XMFLOAT3>& sourceTangents = _staticMesh->Tangents();
-				assert(sourceTangents.size() == _staticMesh->Vertices().size());
+				const vector<XMFLOAT3>& sourceTangents = staticMesh->Tangents();
+				assert(sourceTangents.size() == staticMesh->Vertices().size());
 
 				//Method to fill buffer with an element of texture-coordinate vertex data from mesh.
 				setVertexBufferElements.push_back([this, sourceTangents](char* bufferStart, int& bufferOffset, size_t vertexIndex)
@@ -326,8 +353,8 @@ namespace FieaGameEngine
 
 			else if (descriptionStruct.SemanticName == "PSIZE"s)
 			{
-				const vector<XMFLOAT3>& sourceTangents = _staticMesh->Tangents();
-				assert(sourceTangents.size() == _staticMesh->Vertices().size());
+				const vector<XMFLOAT3>& sourceTangents = staticMesh->Tangents();
+				assert(sourceTangents.size() == staticMesh->Vertices().size());
 
 				//Method to fill buffer with an element of texture-coordinate vertex data from mesh.
 				setVertexBufferElements.push_back([this, sourceTangents](char* bufferStart, int& bufferOffset, size_t vertexIndex)
@@ -342,7 +369,7 @@ namespace FieaGameEngine
 		}
 
 		//Left in this format to describe what is being calculated
-		size_t numberOfVerticies = _staticMesh->Vertices().size();
+		size_t numberOfVerticies = staticMesh->Vertices().size();
 		size_t bitsPerByte = 8;
 		size_t BytesPerVertex{ totalBitsPerVertex / bitsPerByte };
 		size_t BytesInBuffer{ BytesPerVertex * numberOfVerticies };

@@ -56,7 +56,7 @@ namespace FieaGameEngine
 	{
 		Material::Initialize();
 
-		auto& content = mGame->Content();
+		auto& content = mGame->GetContentManager();
 		auto vertexShader = content.Load<VertexShader>(L"Shaders\\SkyboxVS.cso");
 		SetShader(vertexShader);
 

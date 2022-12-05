@@ -42,6 +42,7 @@ namespace FieaGameEngine
 		{
 			return !(operator==(rhs));
 		}
+
 	};
 
 	class ModelResource final : public RTTI
@@ -58,7 +59,8 @@ namespace FieaGameEngine
 		ModelResource& operator=(const ModelResource&) = default;
 		ModelResource& operator=(ModelResource&&) = default;
 		virtual ~ModelResource() = default;
-
+		const ModelData& GetModelData() const;
+		//const std::string& GetFilePath() const;
 		bool HasMeshes() const;
 		bool HasMaterials() const;
 		bool HasAnimations() const;
@@ -72,18 +74,18 @@ namespace FieaGameEngine
 		std::shared_ptr<SceneNode> RootNode() const;
 
 		ModelData& Data();
-
 		void Save(const std::string& filename) const;
 		void Save(std::ofstream& file) const;
 
-
+		const std::string& GetFilePath() const;
 	private:
 		void Load(const std::string& filename);
 		void Load(std::ifstream& file);
 
 		void SaveSkeleton(OutputStreamHelper& streamHelper, const std::shared_ptr<SceneNode>& sceneNode) const;
 		std::shared_ptr<SceneNode> LoadSkeleton(InputStreamHelper& streamHelper, std::shared_ptr<SceneNode> parentSceneNode);
-
 		ModelData mData;
+
+		std::string _filePath;
 	};
 }

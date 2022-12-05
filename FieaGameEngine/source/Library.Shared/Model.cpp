@@ -22,14 +22,22 @@ namespace FieaGameEngine
 	Model::Model(const string& filename) : GameObject(Model::TypeIdClass()),
 		_filePath(filename)
 	{
-		auto& content = _game->Content();
+		auto& content = _game->GetContentManager();
 		_modelResource = content.Load<ModelResource>(Utility::ToWideString(filename));
 	}
+
+	Model::Model(const std::shared_ptr<ModelResource> mr)
+	{
+		//GameObject::Initialize();
+		_modelResource = mr;
+		_filePath = mr->GetFilePath();
+	}
+
 
 	Model::Model(Game& game, const std::string& filename) : GameObject(game, Model::TypeIdClass()),
 		_filePath(filename)
 	{
-		auto& content = _game->Content();
+		auto& content = _game->GetContentManager();
 		_modelResource = content.Load<ModelResource>(Utility::ToWideString(filename));
 	}
 
@@ -61,7 +69,7 @@ namespace FieaGameEngine
 	void Model::Initialize()
 	{
 		GameObject::Initialize();
-		auto& content = _game->Content();
+		auto& content = _game->GetContentManager();
 		assert(_filePath != ""); //Make sure that it is not empty.
 		_modelResource = content.Load<ModelResource>(Utility::ToWideString(_filePath));
 	}
@@ -135,7 +143,7 @@ namespace FieaGameEngine
 	{
 		if (filePath == "") { throw std::runtime_error("Empty string parameter is not allowed."); }
 		_filePath = filePath;
-		auto& content = _game->Content();
+		auto& content = _game->GetContentManager();
 		_modelResource = content.Load<ModelResource>(Utility::ToWideString(_filePath));
 	}
 

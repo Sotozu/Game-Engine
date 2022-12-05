@@ -121,7 +121,7 @@ namespace FieaGameEngine
 
 	void ProxyModel::Initialize()
 	{
-		const auto model = mGame->Content().Load<ModelResource>(Utility::ToWideString(mModelFileName));
+		const auto model = mGame->GetContentManager().Load<ModelResource>(Utility::ToWideString(mModelFileName));
 		Mesh* mesh = model->Meshes().at(0).get();
 		VertexPosition::CreateVertexBuffer(mGame->Direct3DDevice(), *mesh, not_null<ID3D11Buffer**>(mVertexBuffer.put()));
 		mesh->CreateIndexBuffer(mGame->Direct3DDevice(), not_null<ID3D11Buffer**>(mIndexBuffer.put()));

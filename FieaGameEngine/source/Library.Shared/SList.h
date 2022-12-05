@@ -22,10 +22,11 @@ namespace FieaGameEngine
 			Node* _next;
 			template<typename... Args>
 			Node(Args&&... args, Node* next = nullptr);
-
 			Node(const T& data, Node* next = nullptr);
+			Node() = default;
 
 		};
+
 	public:
 		/// <summary>
 		/// Used to traverse a list using an interface.

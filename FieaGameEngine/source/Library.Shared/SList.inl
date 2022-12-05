@@ -13,11 +13,11 @@ namespace FieaGameEngine
 			Node* firstNode = new Node(right._front->_data);
 			_front = firstNode;
 			Node* previousNode = firstNode;
-			Node* rightTraversalNode = right._front;
+			Node* rightcurrentNode = right._front;
 
-			while (rightTraversalNode->_next != nullptr) {
-				rightTraversalNode = rightTraversalNode->_next;
-				Node* newNode = new Node(rightTraversalNode->_data);
+			while (rightcurrentNode->_next != nullptr) {
+				rightcurrentNode = rightcurrentNode->_next;
+				Node* newNode = new Node(rightcurrentNode->_data);
 				previousNode->_next = newNode;
 				previousNode = newNode;
 			}
@@ -127,15 +127,15 @@ namespace FieaGameEngine
 				_back = nullptr;
 			}
 			else {
-				Node* traversalNode = _front;
-				Node* savedNode = traversalNode;
+				Node* currentNode = _front;
+				Node* savedNode = currentNode;
 
-				while (traversalNode->_next != nullptr) {
-					savedNode = traversalNode;
-					traversalNode = traversalNode->_next;
+				while (currentNode->_next != nullptr) {
+					savedNode = currentNode;
+					currentNode = currentNode->_next;
 				}
 
-				delete traversalNode;
+				delete currentNode;
 				_back = savedNode;
 				_back->_next = nullptr;
 			}
@@ -149,11 +149,11 @@ namespace FieaGameEngine
 	void SList<T>::Clear() 
 	{
 		if (!IsEmpty()) {
-			Node* traversalNode = _front;
+			Node* currentNode = _front;
 
-			while (traversalNode != nullptr) {
-				Node* previousNode = traversalNode;
-				traversalNode = traversalNode->_next;
+			while (currentNode != nullptr) {
+				Node* previousNode = currentNode;
+				currentNode = currentNode->_next;
 				delete previousNode;
 			}
 
@@ -179,11 +179,11 @@ namespace FieaGameEngine
 				Node* firstNode = new Node((right._front)->_data);
 				_front = firstNode;
 				Node* previousNode = firstNode;
-				Node* rightTraversalNode = right._front;
+				Node* rightcurrentNode = right._front;
 
-				while (rightTraversalNode->_next != nullptr) {
-					rightTraversalNode = rightTraversalNode->_next;
-					Node* newNode = new Node(rightTraversalNode->_data);
+				while (rightcurrentNode->_next != nullptr) {
+					rightcurrentNode = rightcurrentNode->_next;
+					Node* newNode = new Node(rightcurrentNode->_data);
 					previousNode->_next = newNode;
 					previousNode = newNode;
 				}
@@ -200,14 +200,14 @@ namespace FieaGameEngine
 	SList<T>::~SList() 
 	{
 		if (_front != nullptr) {
-			Node* traversalNode = _front;
+			Node* currentNode = _front;
 			Node* previousNode = _front;
 
-			while (traversalNode->_next != nullptr)
+			while (currentNode->_next != nullptr)
 			{
-				traversalNode = traversalNode->_next;
+				currentNode = currentNode->_next;
 				delete previousNode;
-				previousNode = traversalNode;
+				previousNode = currentNode;
 			}
 
 			delete previousNode;
@@ -304,54 +304,48 @@ namespace FieaGameEngine
 		EqualityFunctor equFunc{};
 
 		bool isRemoved = false;
+
 		if (!IsEmpty())
 		{
-			Find(value);
-
-			Node* traversalNode = _front;
-			Node* previouseNode = _front;
-
-			while (traversalNode != nullptr) //Initial search for value to be removed
+			Node dummy;
+			dummy._next = _front;
+			Node* previouseNode = &dummy;
+			Node* currentNode = _front;
+			while (currentNode != nullptr)
 			{
-				if (equFunc(traversalNode->_data, value)) {break;}
-				previouseNode = traversalNode;
-				traversalNode = traversalNode->_next;
+				if (equFunc(currentNode->_data, value))
+				{
+					isRemoved = true;
+					break;
+				}
+				previouseNode = currentNode;
+				currentNode = currentNode->_next;
 			}
 
-			if (traversalNode != nullptr) //Once search is complete we check if we have found the value.
+			if (currentNode == _back)
 			{
-				if (traversalNode == _front && traversalNode == _back) //Only one item in the list
-				{
-					_front = _back = nullptr;
-				}
-				else if ((traversalNode == _back || traversalNode == _front) && _size == 2) //Only two items on the list
-				{
-					_front = _back = previouseNode;
-					previouseNode->_next = nullptr;
-				}
-				else if (traversalNode == _front) //first item on the list
-				{
-					_front = traversalNode->_next;
-				}
-				else if (traversalNode == _back) //last item on the list
-				{
-					previouseNode->_next = nullptr;
-					_back = previouseNode;
-				}
-				else
-				{
-					previouseNode->_next = traversalNode->_next;
-				}
-				delete traversalNode;
-				--_size;
-				isRemoved = true;
+				_back = previouseNode;
+				previouseNode->_next = currentNode->_next;
+				delete currentNode;
+			}
+			else if(currentNode == _front)
+			{
+				_front = currentNode->_next;
+				previouseNode->_next = currentNode->_next;
+				delete currentNode;
+			}
+			--_size;
+			//This means there is nothing in the list.
+			if (_back == &dummy || _front == nullptr)
+			{
+				_back = _front = nullptr;
 			}
 		}
 		return isRemoved;
 	}
 #pragma endregion
 
-#pragma region SLIST NODE FUNCTIONS
+#pragma region SLIST NODE & DUMMYNODE FUNCTIONS
 	template<typename T>
 	SList<T>::Node::Node(const T& data, Node* next) :
 		_data(data),

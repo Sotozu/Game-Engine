@@ -82,7 +82,7 @@ namespace FieaGameEngine
 
 		std::function<void* ()> GetWindowCallback() const;
 
-		ContentManager& Content();
+		ContentManager& GetContentManager();
 		const ServiceContainer& Services() const;
 
 		const std::shared_ptr<FieaGameEngine::KeyboardComponent> GetKeyBoard() const;

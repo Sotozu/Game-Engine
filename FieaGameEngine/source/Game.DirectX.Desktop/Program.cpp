@@ -97,6 +97,12 @@ int WINAPI WinMain(HINSTANCE instance, HINSTANCE, LPSTR, int showCommand)
 			}
 			else
 			{
+				auto& keyboard = game.GetKeyBoard();
+
+				if (keyboard->WasKeyPressedThisFrame(Keys::O))
+				{
+
+				}
 				game.Run();
 			}
 		}

@@ -1,6 +1,10 @@
 #include "pch.h"
 #include "AvatarFoo.h"
+#include "ActionMeshRenderer.h"
+#include "ContentManager.h"
+#include "Model.h"
 
+#include <utility>
 
 using namespace FieaGameEngine;
 
@@ -101,6 +105,28 @@ namespace FieaGameEngine
 			GetTransform()._scale.x -= 0.05f;
 			GetTransform()._scale.y -= 0.05f;
 			GetTransform()._scale.z -= 0.05f;
+		}
+
+		//ChangeMesh
+		if (_game->GetKeyBoard()->WasKeyReleasedThisFrame(Keys::Space))
+		{
+			auto actionMR = Find("_actions")->Get<Scope>().As<ActionMeshRenderer>();
+			if (actionMR != nullptr)
+			{
+				if (_modelSwitch == true)
+				{
+					auto mr = _game->GetContentManager().Load<ModelResource>(Utility::ToWideString("Models\\Rocks\\Rock1D.fbx.bin"));
+					actionMR->ChangeModel(mr);
+				}
+				else
+				{
+					auto mr = _game->GetContentManager().Load<ModelResource>(Utility::ToWideString("Models\\Swords\\broadSword.fbx.bin"));
+					actionMR->ChangeModel(mr);
+
+				}
+				_modelSwitch = !_modelSwitch;
+				//actionMR->ChangeModel("Models\\Rocks\\Rock2.fbx.bin");
+			}
 		}
 
 

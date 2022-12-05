@@ -23,17 +23,31 @@ namespace FieaGameEngine
 	ModelResource::ModelResource(const string& filename)
 	{
 		Load(filename);
+		_filePath = filename;
 	}
 
 	ModelResource::ModelResource(ifstream& file)
 	{
 		Load(file);
+		std::stringstream buffer;
+		buffer << file.rdbuf();
+		_filePath = buffer.str();
 	}
 
 	ModelResource::ModelResource(ModelData&& modelData) :
 		mData(move(modelData))
 	{
 	}
+
+	const ModelData& ModelResource::GetModelData() const
+	{
+		return mData;
+	}
+	const std::string& ModelResource::GetFilePath() const
+	{
+		return _filePath;
+	}
+
 
 	bool ModelResource::HasMeshes() const
 	{

@@ -228,9 +228,9 @@ namespace UnitTestLibraryDesktop
 			Assert::AreEqual(0.3f, light->Color().z);
 			Assert::AreEqual(0.4f, light->Color().w);
 
-			Light& registered_light = LightRegistry::GetLight();
+			//Light& registered_light = LightRegistry::GetLight();
 
-			Assert::AreEqual(light, &registered_light);
+			//Assert::AreEqual(light, &registered_light);
 
 		}
 		TEST_METHOD(SceneTest)

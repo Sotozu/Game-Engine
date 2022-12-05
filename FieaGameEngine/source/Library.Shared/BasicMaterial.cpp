@@ -41,7 +41,7 @@ namespace FieaGameEngine
 		assert(_vertexShaderFilePath != "");
 		assert(_pixelShaderFilePath != "");
 
-		auto& content = mGame->Content();
+		auto& content = mGame->GetContentManager();
 		auto vertexShader = content.Load<VertexShader>(Utility::ToWideString(_vertexShaderFilePath));
 		SetShader(vertexShader);
 
@@ -52,7 +52,7 @@ namespace FieaGameEngine
 		vertexShader->CreateInputLayout<VertexPosition>(direct3DDevice);
 		SetInputLayout(vertexShader->InputLayout());
 
-		//auto& content = mGame->Content();
+		//auto& content = mGame->GetContentManager();
 
 
 		//auto vertexShader = content.Load<VertexShader>(L"Shaders\\BasicVS.cso");

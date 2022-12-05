@@ -26,6 +26,7 @@ namespace FieaGameEngine
 		/// Required for Factory and de-serialization
 		/// </summary>
 		Model();
+		Model(const std::shared_ptr<ModelResource> mr);
 		Model(const std::string& filename);
 		Model(Game& game);
 		Model(Game& game, const std::string& filename);

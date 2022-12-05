@@ -17,6 +17,12 @@ namespace FieaGameEngine
 	class VertexShader;
 	class PixelShader;
 
+
+	/// <summary>
+	/// This mesh renderer does not check the compatibility of Shaders and Materials. 
+	/// This is a core requirement to have a safe mesh renderer.
+	/// </summary>
+
 	class ActionMeshRenderer final : public Action
 	{
 		RTTI_DECLARATIONS(ActionMeshRenderer, Action);
@@ -126,6 +132,12 @@ namespace FieaGameEngine
 		Camera* GetCamera();
 
 		void SetCamera(Camera& camera);
+		/// <summary>
+		/// Change the mesh at runtime
+		/// </summary>
+		/// <param name="m"></param>
+		void ChangeModel(const std::shared_ptr<ModelResource> m);
+		//void ChangeModel(const std::string& filePath);
 	protected:
 		/// Protected constructor that is implemented in inheriting Objects who need to pass on their TypeId to Attributed.
 		/// </summary>

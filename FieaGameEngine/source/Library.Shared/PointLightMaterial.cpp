@@ -140,7 +140,7 @@ namespace FieaGameEngine
 		assert(_vertexShaderFilePath != "");
 		assert(_pixelShaderFilePath != "");
 
-		auto& content = mGame->Content();
+		auto& content = mGame->GetContentManager();
 		auto vertexShader = content.Load<VertexShader>(Utility::ToWideString(_vertexShaderFilePath));
 		SetShader(vertexShader);
 
@@ -151,8 +151,8 @@ namespace FieaGameEngine
 		vertexShader->CreateInputLayout<VertexPositionTextureNormal>(direct3DDevice);
 		SetInputLayout(vertexShader->InputLayout());
 
-		auto colorMap = mGame->Content().Load<Texture2D>(Utility::ToWideString(_colorMap));
-		auto specularMap = mGame->Content().Load<Texture2D>(Utility::ToWideString(_specularMap));
+		auto colorMap = content.Load<Texture2D>(Utility::ToWideString(_colorMap));
+		auto specularMap = content.Load<Texture2D>(Utility::ToWideString(_specularMap));
 
 		mColorMap = std::move(colorMap);
 		mSpecularMap = std::move(specularMap);
